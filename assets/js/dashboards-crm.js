@@ -280,8 +280,9 @@
   const revenueGrowthEl = document.querySelector('#revenueGrowth'),
     revenueGrowthConfig = {
       chart: {
-        height: 170,
+        height: 300,
         type: 'bar',
+        stacked: true,
         parentHeightOffset: 0,
         toolbar: {
           show: false
@@ -289,6 +290,8 @@
       },
       plotOptions: {
         bar: {
+          
+
           barHeight: '80%',
           columnWidth: '30%',
           startingShape: 'rounded',
@@ -297,11 +300,30 @@
           distributed: true
         }
       },
+      legend: {
+        show: false,
+        position: 'top',
+        horizontalAlign: 'start',
+        labels: {
+          colors: legendColor,
+          useSeriesColors: false
+        }
+      },
+      stroke: {
+        show: true,
+        width: 1,
+          colors: ['#fff']
+      },
       tooltip: {
         enabled: false
       },
       grid: {
         show: false,
+        xaxis: {
+          lines: {
+            show: true
+          }
+        },
         padding: {
           top: -20,
           bottom: -12,
@@ -319,36 +341,47 @@
         config.colors_label.success
       ],
       dataLabels: {
-        enabled: false
+        enabled: true
       },
       series: [
         {
-          data: [25, 40, 55, 70, 85, 70, 55]
+          data: [25, 40, 55, 70, 85, 70, 55, 70, 55]
         }
       ],
-      legend: {
-        show: false
+      dataLabels: {
+        formatter: (val) => {
+          return val + 'K'
+        }
       },
       xaxis: {
-        categories: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         axisBorder: {
-          show: false
+          show: true
         },
         axisTicks: {
-          show: false
+          show: true
         },
         labels: {
+        
           style: {
             colors: labelColor,
             fontSize: '13px',
             fontFamily: 'Public Sans'
           }
+          
         }
       },
       yaxis: {
         labels: {
-          show: false
-        }
+          show: true
+        } ,style: {
+          colors: labelColor,
+          fontSize: '20px',
+          fontFamily: 'Public Sans'
+        },
+        axisBorder: {
+          show: true
+        },
       },
       states: {
         hover: {
