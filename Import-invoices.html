@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>add station</title>
+    <title>Import invoices</title>
 
     <meta name="description" content="" />
 
@@ -702,16 +702,13 @@
                 <div class="col-xl">
                   <div class="card mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span> اضافه محطة</strong>
-
-                      <section class="row component-form mt-4 pt-4">
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-fullname">اسم المحطه</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم المحطة" />
-                        </div>
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>  استيراد فواتير</strong>
+                      <p class="pt-2 pb-2 mt-3 fs-5">برجاء اختيار المحطة</p>
+                      <form class="row component-form component-mdecit mt-4 pt-4 align-items-center">
+                        
                         <div class="col col-lg-3 mb-3">
                           
-                            <label for="select2Basic" class="form-label">الفرع</label>
+                            <label for="select2Basic" class="form-label">المحطه</label>
                             <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
                               <option value="AK">Alaska</option>
                               <option value="HI">Hawaii</option>
@@ -722,123 +719,11 @@
                             </select>
                         
                         </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-pth">المسار</label>
-                          <input type="text" class="form-control" id="basic-default-pth" placeholder="المسار " />
-
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-locetion">العنوان</label>
-                          <input type="text" class="form-control" id="basic-default-locetion" placeholder="العنوان " />
-
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-line">خط الطول</label>
-                          <input type="text" class="form-control" id="basic-default-line" placeholder="خط الطول " />
-
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-line2">خط العرض</label>
-                          <input type="text" class="form-control" id="basic-default-line2" placeholder="خط العرض " />
-
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-phone">رقم التلفيون</label>
-                          <input
-                            type="text"
-                            id="basic-default-phone"
-                            class="form-control phone-mask"
-                            placeholder="رقم التلفيون" />
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          <label class="form-label" for="basic-default-emile"> الايميل</label>
-                          <input type="email" class="form-control" id="basic-default-emile" placeholder=" الايميل " />
-
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          
-                          <label for="select2Basic" class="form-label">المدينة</label>
-                          <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                            <option value="AK">Alaska</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="CA">California</option>
-                            <option value="NV">Nevada</option>
-                            <option value="OR">Oregon</option>
-                        
-                          </select>
-                      
-                        </div>
-                        <div class="col col-lg-3 mb-3">
-                          
-                        <label for="select2Basic" class="form-label">الحى</label>
-                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                          <option value="AK">Alaska</option>
-                          <option value="HI">Hawaii</option>
-                          <option value="CA">California</option>
-                          <option value="NV">Nevada</option>
-                          <option value="OR">Oregon</option>
-                      
-                        </select>
-                    
-                       </div>
-
-
-                       <!--المضخات-->
-                       <div class="component-mdecit mt-4 mb-4">
-                        <div class="pt-4">
-                          <strong class="mb-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span> اضافه مضخات</strong>
-  
-                         </div>
-                         <form class="form-repeater pt-5">
-                          <div data-repeater-list="group-a">
-                            <div class="row align-items-center">
-                              <div data-repeater-item class="col-lg-10">
-                                <div class="row">
-                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                    <label class="form-label" for="form-repeater-1-1">اسم المضخة</label>
-                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder="اسم المضخة." />
-                                  </div>
-                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                    <label class="form-label" for="form-repeater-1-4">المخزون</label>
-                                    <select id="form-repeater-1-4" class="form-select">
-                                      <option value="Designer">اختر المخزون</option>
-                                      <option value="Developer">Developer</option>
-                                      <option value="Tester">Tester</option>
-                                      <option value="Manager">Manager</option>
-                                    </select>
-                                  </div>
-                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                    <label class="form-label" for="form-repeater-1-1"> كود المنطقة</label>
-                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder="كود المنطقة" />
-                                  </div>
-                                  <div class="mb-3 col-lg-12 col-xl-2 col-12 d-flex align-items-center mb-0">
-                                    <button class="btn btn-label-danger mt-4" data-repeater-delete>
-                                      <i class="ti ti-x ti-xs me-1"></i>
-                                      <span class="align-middle">Delete</span>
-                                    </button>
-                                  </div>
-                                </div>
-                                <hr />
-                              </div>
-                              <div class="col-lg-2 mb-3">
-                                <button class="btn btn-primary" data-repeater-create>
-                                  <i class="ti ti-plus me-1"></i>
-                                  <span class="align-middle">Add New</span>
-                                </button>
-                              </div>
-                            </div>
-                          
-                          </div>
-                        
-                         </form>
-                       </div>
-                       <!--end-->
                        <div class="col col-lg-8">
-                        <button type="submit" class="btn btn-primary ">حفظ</button>
-                        <a href="all-station.html"  class="btn btn-label-secondary waves-effect mx-3">مشاهدة الكل</a>
+                        <button type="submit" class="btn btn-primary ">استيراد</button>
                        </div>
                        
-                      </section>
+                      </form>
                      
                     </div>
                   </div>

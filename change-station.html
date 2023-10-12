@@ -610,7 +610,7 @@
                           </a>
                         </li>
                         <li class="menu-item">
-                          <a href="#" class="menu-link" target="_blank">
+                          <a href="Import-invoices.html" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                             <div data-i18n="Import invoices"> استيراد فواتير</div>
                           </a>
@@ -700,11 +700,11 @@
                <!-- Basic Layout -->
                <div class="row">
                 <div class="col-xl">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <h4 class=" mb-3 text-title-hadeer"><span class="text-muted fw-medium"></span> تعديل محطة</h4>
+                  <div class="card  mb-4">
+                    <div class="card-body p-4">
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span> تعديل محطة</strong>
 
-                      <section class="row component-form">
+                      <section class="row component-form mt-4 pt-4">
                         <div class="col col-lg-3 mb-3">
                           <label class="form-label" for="basic-default-fullname">اسم المحطه</label>
                           <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم المحطة" />
@@ -781,37 +781,45 @@
                         </select>
                     
                        </div>
-                       <h4 class="col-12 py-3 mb-4 text-title-hadeer"><span class="text-muted fw-medium"></span>  مضخات</h4>
-                        <div data-repeater-list="group-a">
-                          <div class="row align-items-center">
-                            <div data-repeater-item class="col-lg-10">
-                              <div class="row">
-                                <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                  <label class="form-label" for="form-repeater-1-1">اسم المضخة</label>
-                                  <input type="text" id="form-repeater-1-1" class="form-control" placeholder="اسم المضخة." />
-                                </div>
-                                <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                  <label class="form-label" for="form-repeater-1-4">المخزون</label>
-                                  <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" مخزون محطه لبن." />
 
+
+                       <!--المضخات-->
+                       <div class="component-mdecit mt-4 mb-4">
+                        <div class="pt-4">
+                          <strong class="mb-3 text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>  مضخات</strong>
+                          <div data-repeater-list="group-a" class="pt-5">
+                            <div class="row align-items-center">
+                              <div data-repeater-item class="col-lg-10">
+                                <div class="row">
+                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
+                                    <label class="form-label" for="form-repeater-1-1">اسم المضخة</label>
+                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder="اسم المضخة." />
+                                  </div>
+                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
+                                    <label class="form-label" for="form-repeater-1-4">المخزون</label>
+                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" مخزون محطه لبن." />
+  
+                                  </div>
+                                  <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
+                                    <label class="form-label" for="form-repeater-1-1"> كود المنطقة</label>
+                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder="كود المنطقة" />
+                                  </div>
+                                  
                                 </div>
-                                <div class="mb-3 col-lg-6 col-xl-3 col-12 mb-0">
-                                  <label class="form-label" for="form-repeater-1-1"> كود المنطقة</label>
-                                  <input type="text" id="form-repeater-1-1" class="form-control" placeholder="كود المنطقة" />
-                                </div>
-                                
+                                <hr />
                               </div>
-                              <hr />
+                            
                             </div>
                           
                           </div>
-                        
-                        </div>
+                         </div>
+                       </div>
                       
+                      <!--المضخات-->
                       
-                       <div class="col col-lg-6">
-                        <button type="submit" class="btn btn-primary">حفظ</button>
-                        <a href="#"  class="btn btn-label-secondary waves-effect">مشاهدة الكل</a>
+                      <div class="col col-lg-8">
+                        <button type="submit" class="btn btn-primary ">حفظ</button>
+                        <a href="all-station.html"  class="btn btn-label-secondary waves-effect mx-3">مشاهدة الكل</a>
                        </div>
                        
                       </section>

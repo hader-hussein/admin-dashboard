@@ -6356,8 +6356,8 @@ input:-internal-autofill-selected {
 }
 
 .bg-label-danger {
-  background-color: #fce5e6 !important;
-  color: #ea5455 !important;
+  background-color: rgb(var(--theme-color))!important;
+  color: #fff !important;
 }
 
 .bg-label-light {
@@ -13003,7 +13003,7 @@ html:not([dir=rtl]) .card .card-separator {
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--theme-color), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light {

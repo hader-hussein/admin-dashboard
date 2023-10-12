@@ -179,7 +179,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 }
 
 .dropdown-notifications-item:not(.mark-as-read) .dropdown-notifications-read span {
-  background-color: #7367f0;
+  background-color: rgb(var(--theme-color));
 }
 
 .bg-label-primary {

@@ -63,7 +63,16 @@
   --bs-code-color: #e83e8c;
   --bs-highlight-bg: #ffecd9;
 }
-
+:root {
+ 
+  --blue: 115, 103, 240;
+  --grey: 168, 170, 174;
+  --green: 40, 199, 111;
+  --Brown: 0, 207, 232;
+  --orange: 255, 159, 67;
+  --red:234, 84, 85;
+  --theme-color: var(--blue);
+}
 *,
 *::before,
 *::after {
@@ -6298,8 +6307,8 @@ input:-internal-autofill-selected {
 }
 
 .bg-label-danger {
-  background-color: #4d384b !important;
-  color: #ea5455 !important;
+  background-color: rgb(var(--theme-color)) !important;
+  color: #fff !important;
 }
 
 .bg-label-light {
@@ -12947,7 +12956,7 @@ html:not([dir=rtl]) .card .card-separator {
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--theme-color), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light {
