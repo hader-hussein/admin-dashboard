@@ -82,7 +82,9 @@ padding: 10px !important;
  .bg-yellowe{
   background-color: yellow !important;
  }  
-
+ .progress-bar.bg-danger{
+  background-color: #EA5455 !important;
+ }  
 .progress .progress-bar{
   position: absolute;
   width: 100%;
