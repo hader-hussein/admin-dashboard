@@ -2980,8 +2980,8 @@ textarea.form-control-lg {
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
+  color: rgb(var(--theme-color))!important;
+  background-color:rgb(var(--theme-color),0.10)!important;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
@@ -18808,7 +18808,9 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   padding: 0.875rem;
 }
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item:hover {
-  background-color: rgba(134, 146, 208, 0.06);
+  background-color: rgb(var(--theme-color),0.10)!important;
+  color: rgb(var(--theme-color))!important;
+  
 }
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item .dropdown-shortcuts-icon {
   height: 3rem;

@@ -384,8 +384,8 @@ button.list-group-item-primary.active {
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .btn-primary.show.dropdown-toggle, .show > .btn-primary.dropdown-toggle {
   color: #fff !important;
-  background-color: #685dd8 !important;
-  border-color: #685dd8 !important;
+  background-color: rgb(var(--theme-color)) !important;
+  border-color: rgb(var(--theme-color))!important;
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff !important;
@@ -498,7 +498,7 @@ button.list-group-item-primary.active {
 
 .dropdown-item:not(.disabled).active,
 .dropdown-item:not(.disabled):active {
-  background-color: #7367f0;
+  background-color: rgb(var(--theme-color))!important;
   color: #fff !important;
 }
 
@@ -1511,7 +1511,7 @@ li.ui-timepicker-selected,
   background: #f4f4f5;
 }
 html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item:not(.active) > .menu-link:hover, .layout-menu-hover.layout-menu-collapsed .bg-menu-theme .menu-inner .menu-item:not(.active) > .menu-link:hover {
-  background: #f8f8f8;
+  background: rgb(var(--theme-color),0.10);
 }
 .bg-menu-theme .menu-inner .menu-sub .menu-item:not(.active) > .menu-link::before {
   color: #a5a3ae !important;

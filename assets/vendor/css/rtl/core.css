@@ -2978,8 +2978,8 @@ textarea.form-control-lg {
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
+  color: rgb(var(--theme-color))!important;
+  background-color: rgb(var(--theme-color),0.10)!important;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
@@ -6356,7 +6356,7 @@ input:-internal-autofill-selected {
 }
 
 .bg-label-danger {
-  background-color: rgb(var(--theme-color))!important;
+  background-color: #EA5455!important;
   color: #fff !important;
 }
 
@@ -10892,7 +10892,7 @@ button.list-group-item-gray.active {
 }
 .navbar .list-group-item:hover,
 .navbar .list-group-item:focus {
-  background-color: rgba(75, 70, 92, 0.04);
+  background-color: rgb(var(--theme-color),0.10)!important;
   color: inherit;
 }
 
@@ -13003,7 +13003,7 @@ html:not([dir=rtl]) .card .card-separator {
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--theme-color), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(234, 84, 85), var(--bs-bg-opacity)) !important;
 }
 
 .bg-light {
@@ -18835,7 +18835,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item .dropdown-notifications-archive i,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item .dropdown-notifications-archive span {
-  color: #6f6b7d;
+    color: rgb(var(--theme-color))!important;;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-archive {
@@ -18862,7 +18862,8 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   padding: 0.875rem;
 }
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item:hover {
-  background-color: rgba(75, 70, 92, 0.04);
+  background-color: rgb(var(--theme-color),0.10)!important;
+  color: rgb(var(--theme-color))!important;
 }
 .layout-navbar .navbar-dropdown.dropdown-shortcuts .dropdown-shortcuts-item .dropdown-shortcuts-icon {
   height: 3rem;
