@@ -898,7 +898,7 @@ a:hover {
 }
 
 .select2-container--default.select2-container--focus .select2-selection, .select2-container--default.select2-container--open .select2-selection {
-  border-color: #7367f0 !important;
+  border-color: rgb(var(--theme-color))!important ;
 }
 
 .select2-primary .select2-container--default .select2-selection--multiple .select2-selection__choice {

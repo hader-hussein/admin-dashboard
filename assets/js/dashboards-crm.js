@@ -340,6 +340,15 @@
         config.colors_label.success,
         config.colors_label.success
       ],
+      methods: {
+        updateTheme(e) {
+          this.chartOptions = {
+            theme: {
+              palette: e.target.value
+            }
+          };
+        }
+      },
       dataLabels: {
         enabled: true
       },
@@ -453,6 +462,7 @@
             }
           }
         },
+        
         {
           breakpoint: 381,
           options: {

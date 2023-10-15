@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Import invoices</title>
+    <title>add employes</title>
 
     <meta name="description" content="" />
 
@@ -251,7 +251,7 @@
                     data-bs-auto-close="outside"
                     aria-expanded="false">
                     <i class="ti ti-bell ti-md"></i>
-                    <span class="badge bg-danger rounded-pill badge-notifications text-bg-danger">5</span>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end py-0">
                     <li class="dropdown-menu-header border-bottom">
@@ -609,7 +609,7 @@
                             <div data-i18n="Add a station">اضافة محطة</div>
                           </a>
                         </li>
-                        <li class="menu-item active">
+                        <li class="menu-item">
                           <a href="Import-invoices.html" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                             <div data-i18n="Import invoices"> استيراد فواتير</div>
@@ -621,7 +621,7 @@
                             <div data-i18n="Products prices">اسعار المنتجات</div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item active">
                           <a href="employees.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                             <div data-i18n="employees">الموظفين </div>
@@ -698,58 +698,165 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
                <!-- Basic Layout -->
-               <div class="row">
+             
                 <div class="col-xl">
                   <div class="card mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>  استيراد فواتير</strong>
-                      <p class="pt-2 pb-2 mt-3 fs-5">برجاء اختيار المحطة</p>
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span> اضافه موظفين</strong>
                       <div class="row  mt-5 justify-content-center">
-                        <div class="col-xl-8 col-lg-6 col-md-6">
-                          <div class="card h-100 card-border-shadow-gray">
-                            <div class="row h-100 align-items-center">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                          <div class="card h-100 card-border-shadow-gray ">
+                            <div class="row h-100">
                               <div class="col-sm-5">
                                 <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/invoices.jpg" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
+                                  <img src="./assets/img/illustrations/add-new-roles.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="83">
+                                  <img src="./assets/img/illustrations/card-advance-sale.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="83">
 
                                 </div>
                               </div>
                               <div class="col-sm-7">
-                                <form class="row component-form  mt-4 pt-4 align-items-center">
-                            
-                                  <div class="col col-lg-8 mb-3">
-                                    
-                                      <label for="select2Basic" class="form-label">المحطه</label>
-                                      <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                                        <option value="AK">Alaska</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="CA">California</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="OR">Oregon</option>
-                                    
-                                      </select>
-                                  
-                                  </div>
-                                 <div class="col col-lg-3">
-                                  <button type="submit" class="btn btn-primary ">استيراد</button>
-                                 </div>
-                                 
-                                </form>
+                                <div class="card-body text-sm-end text-center ps-sm-0">
+                                  <button data-bs-target="#addRoleModal" data-bs-toggle="modal" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
+                                   اضافة موظفين
+                                  </button>
+                                  <p class="mb-0 mt-1">Add station, if it does not exist</p>
+                                </div>
                               </div>
                             </div>
-                           
                           </div>
-                          
                         </div>
                       </div>
-                   
+                    
+                     
                      
                     </div>
                   </div>
                 </div>
              
+           
+            <!-- Add station Modal -->
+            <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+                <div class="modal-content p-3 p-md-3">
+                  <button
+                    type="button"
+                    class="btn-close btn-pinned"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="modal-body">
+                    <div class="text-center mb-4">
+                      <h3 class="role-title mb-2">اضافه موظفين</h3>
+                    </div>
+                    <!-- Add employees form -->
+                    <form class="row component-form mt-4 pt-4">
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-fullname">اسم الموظف<span class="start-form">*</span></label>
+                        <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم الموظف" />
+                      </div>
+                   
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-pth">البريد الالكترونى<span class="start-form">*</span></label>
+                        <input type="email" class="form-control" id="basic-default-pth" placeholder="البريد الالكترونى " />
+
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-locetion">الجوال<span class="start-form">*</span></label>
+                        <input type="text" class="form-control" id="basic-default-locetion" placeholder="الهاتف " />
+
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-line"> رقم الهواية<span class="start-form">*</span></label>
+                        <input type="text" class="form-control" id="basic-default-line" placeholder="رقم الهواية  " />
+
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        
+                        <label for="select2Basic" class="form-label">الجنسية<span class="start-form">*</span></label>
+                        <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK">Alaska</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                          <option value="OR">Oregon</option>
+                      
+                        </select>
+                    
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-phone"> الوظيفة<span class="start-form">*</span></label>
+                        <input
+                          type="text"
+                          id="basic-default-phone"
+                          class="form-control phone-mask"
+                          placeholder=" الوظيفة" />
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-emile"> الفئة<span class="start-form">*</span></label>
+                        <input type="text" class="form-control" id="basic-default-emile" placeholder=" الفئة " />
+
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        
+                        <label for="select1Basic" class="form-label">اساليب الدفع<span class="start-form">*</span></label>
+                        <select id="select1Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK">نقدية</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                          <option value="OR">Oregon</option>
+                      
+                        </select>
+                    
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        
+                        <label for="select3Basic" class="form-label"> المحطة<span class="start-form">*</span></label>
+                        <select id="select3Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK">محطة لبن</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                          <option value="OR">Oregon</option>
+                      
+                        </select>
+                    
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-emile">  الدوام<span class="start-form">*</span></label>
+                        <input type="text" class="form-control" id="basic-default-emile" placeholder=" cdd " />
+
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        
+                        <label for="select5Basic" class="form-label"> اختر مجموعه مستخدمين<span class="start-form">*</span></label>
+                        <select id="select5Basic" class="select2 form-select" data-allow-clear="true">
+                          <option value="AK"> المدير العام</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                          <option value="OR">Oregon</option>
+                      
+                        </select>
+                    
+                      </div>
+                      <div class="col col-lg-4 mb-3">
+                        <label class="form-label" for="basic-default-emile">  كلمة المرور<span class="start-form">*</span></label>
+                        <input type="password" class="form-control" id="basic-default-emile" placeholder=" ********** " />
+
+                      </div>
+                   
+                     <div class="col col-lg-8 mt-4">
+                      <button type="submit" class="btn btn-primary ">حفظ</button>
+                      <a href="all-employes.html"  class="btn btn-label-secondary waves-effect mx-3">مشاهدة الكل</a>
+                     </div>
+                     
+                    </form>
+                    <!--/ Add employees form -->
+                  </div>
+                </div>
               </div>
-            
+            </div>
+            <!--/ Add station Modal -->
             
             </div>
           

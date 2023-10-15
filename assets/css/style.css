@@ -283,3 +283,12 @@ font-size: 18px !important;
   border-style: inset;
   box-shadow: 10px 10px 5px rgb(var(--theme-color),0.5) inset;
 }
+.start-form{
+  color: #EA5455;
+  margin: 0px 5px;
+  font-size: 18px;
+}
+.content-footer a{
+  color: rgb(var(--theme-color))!important;
+}
+

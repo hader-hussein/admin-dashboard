@@ -127,13 +127,13 @@
   padding: 0.5rem 1rem;
 }
 .select2-results__option[role=option][aria-selected=true] {
-  background-color: #7367f0;
+  background-color: rgb(var(--theme-color))!important;;
   color: #fff;
 }
 
 .select2-container--default .select2-results__option--highlighted:not([aria-selected=true]) {
-  background-color: rgba(115, 103, 240, 0.08) !important;
-  color: #7367f0 !important;
+  background-color:rgb(var(--theme-color),0.10)!important;
+  color: rgb(var(--theme-color))!important;
 }
 
 .select2-hidden-accessible {
