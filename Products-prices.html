@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>all station</title>
+    <title>Products prices</title>
 
     <meta name="description" content="" />
 
@@ -587,7 +587,7 @@
                 <div class="container-xxl d-flex h-100">
                   <ul class="menu-inner">
                     <!-- Dashboards -->
-                    <li class="menu-item">
+                    <li class="menu-item ">
                       <a href="index.html" class="menu-link ">
                         <i class="menu-icon tf-icons ti ti-smart-home"></i>
                         <div data-i18n="Dashboards">Dashboards</div>
@@ -603,19 +603,19 @@
                       </a>
 
                       <ul class="menu-sub">
-                        <li class="menu-item active">
+                        <li class="menu-item">
                           <a href="addstation.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-menu-2"></i>
                             <div data-i18n="Add a station">اضافة محطة</div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item ">
                           <a href="Import-invoices.html" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                             <div data-i18n="Import invoices"> استيراد فواتير</div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item active">
                           <a href="Products-prices.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-maximize"></i>
                             <div data-i18n="Products prices">اسعار المنتجات</div>
@@ -697,85 +697,146 @@
             <!-- / Menu -->
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="row d-flex justify-content-between  mb-3 align-items-center pt-4">
-                <div class="col">
-                  <strong class="text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>  المحطات</strong>
-
-                </div>
-                <div class="col text-end">
-                  <a href="addstation.html" class="btn btn-primary waves-effect waves-light">اضافه محطة</a>
-
-                </div>
-              </div>
-
                <!-- Basic Layout -->
-               <div class="card mt-5">
-                <div class="table-responsive text-nowrap rounded">
-                  <table class="table table-bordered table-hover rounded">
-                    <thead class="table-light">
-                      <tr class="fw-bold">
-                        <th class="fw-bold">التسلسل</th>
-                        <th class="fw-bold">اسم المحطة</th>
-                        <th class="fw-bold">الفرع</th>
-                        <th class="fw-bold">عدد المضخات</th>
-                        <th class="fw-bold">Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td>
-                         1
-                        </td>
-                        <td>محطة لبن</td>
-                  
-                        <td>الريا فرع محطة لبن</td>
-                        <td>8   </td>
-  
-                        <td class="d-flex">
-                          <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="change-station.html" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
-                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
-                        
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                        2
-                        </td>
-                        <td>محطة الرمال</td>
-                  
-                        <td>الرياض فرع محطة الرمال</td>
-                        <td>16   </td>
-  
-                        <td class="d-flex">
-                          <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="change-station.html" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
-                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                         3
-                        </td>
-                        <td> بريدة</td>
-                  
-                        <td>الرياض فرع محطة الرمال</td>
-                        <td>1   </td>
-  
-                        <td class="d-flex">
-                          <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="change-station.html" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
-                          <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+               <div class="row">
+                <div class="col-xl">
+                  <div class="card mb-4">
+                    <div class="card-body p-4">
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>   اسعار المنتجات</strong>
+                      <p class="pt-2 pb-2 mt-3 fs-5">برجاء اختيار المحطة</p>
+                      <div class="row  mt-5 justify-content-center">
+                        <div class="col-xl-8 col-lg-6 col-md-6">
+                          <div class="card h-100 card-border-shadow-gray">
+                            <div class="row h-100 align-items-center">
+                              <div class="col-sm-5">
+                                <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
+                                  <img src="./assets/img/illustrations/page-pricing-standard.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
+
+                                </div>
+                              </div>
+                              <div class="col-sm-7">
+                                <section class="row component-form  mt-4 pt-4 pb-4 align-items-center">
+                                  <div class="col col-lg-8 mb-3">
+                                    
+                                    <label for="select1Basic" class="form-label">المنطقة</label>
+                                    <select id="select1Basic" class="select2 form-select" data-allow-clear="true">
+                                      <option value="AK">Alaska</option>
+                                      <option value="HI">Hawaii</option>
+                                      <option value="CA">California</option>
+                                      <option value="NV">Nevada</option>
+                                      <option value="OR">Oregon</option>
+                                  
+                                    </select>
+                                
+                                  </div>
+                                  <div class="col col-lg-8 mb-3">
+                                    
+                                      <label for="select2Basic" class="form-label">المحطه</label>
+                                      <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="CA">California</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="OR">Oregon</option>
+                                    
+                                      </select>
+                                  
+                                  </div>
+                                 <div class="col col-lg-5">
+                                  <button  class="btn btn-primary" data-bs-target="#addRoleModal" data-bs-toggle="modal" >التالى</button>
+                                 </div>
+                               
+                                </section>
+                              </div>
+                            </div>
+                           
+                          </div>
+                          
+                        </div>
+                      </div>
+                   
+                     
+                    </div>
+                  </div>
                 </div>
-               </div>
-              
+             
+              </div>
             
             
             </div>
           
             <!--/ Content -->
-
+            <!-- Add products Modal -->
+            <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-add-new-role">
+                <div class="modal-content p-3 p-md-3">
+                  <button
+                    type="button"
+                    class="btn-close btn-pinned"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="modal-body">
+                    <div class="text-center mb-4">
+                      <h3 class="role-title mb-2"> تعديل اسعار</h3>
+                    </div>
+                    <!-- Add employees form -->
+                    <form class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 component-form mt-4 pt-4">
+                      <div class="col">
+                        <label class="fs-4 justify-content-center mb-3 row ">بنزين91</label>
+                        <div class="mb-3 row">
+                          <label for="text-input" class="px-1 col-md-4 col-form-label text-center">السعر الحالى</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="200" id="text-input">
+                          </div>
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="html5-text-input" class="col-md-4 px-1 col-form-label text-center">السعر الجديد</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="السعر الجديد" id="html5-text-input">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label class="fs-4 justify-content-center mb-3 row">بنزين 95</label>
+                        <div class="mb-3 row">
+                          <label for="text-input" class="col-md-4 px-1 col-form-label text-center">السعر الحالى</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="200" id="text-input">
+                          </div>
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="html5-text-input" class="col-md-4 px-1 col-form-label text-center">السعر الجديد</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="السعر الجديد" id="html5-text-input">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label class="fs-4 justify-content-center mb-3 row"> ديزل</label>
+                        <div class="mb-3 row">
+                          <label for="text-input" class="col-md-4 px-1 col-form-label text-center">السعر الحالى</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="200" id="text-input">
+                          </div>
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="html5-text-input" class="col-md-4 px-1 text-center col-form-label">السعر الجديد</label>
+                          <div class="col-md-8 px-0">
+                            <input class="form-control" type="text" placeholder="السعر الجديد" id="html5-text-input">
+                          </div>
+                        </div>
+                      </div>
+                     <div class="col col-lg-8 mt-4">
+                      <button type="submit" class="btn btn-primary ">حفظ</button>
+                     </div>
+                     
+                    </form>
+                    <!--/ Add employees form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Add products Modal -->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
