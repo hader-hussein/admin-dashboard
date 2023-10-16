@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Import invoices</title>
+    <title>change services</title>
 
     <meta name="description" content="" />
 
@@ -587,7 +587,7 @@
                 <div class="container-xxl d-flex h-100">
                   <ul class="menu-inner">
                     <!-- Dashboards -->
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="index.html" class="menu-link ">
                         <i class="menu-icon tf-icons ti ti-smart-home"></i>
                         <div data-i18n="Dashboards">Dashboards</div>
@@ -603,13 +603,13 @@
                       </a>
 
                       <ul class="menu-sub">
-                        <li class="menu-item">
+                        <li class="menu-item ">
                           <a href="addstation.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-menu-2"></i>
                             <div data-i18n="Add a station">اضافة محطة</div>
                           </a>
                         </li>
-                        <li class="menu-item active">
+                        <li class="menu-item">
                           <a href="Import-invoices.html" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                             <div data-i18n="Import invoices"> استيراد فواتير</div>
@@ -621,19 +621,19 @@
                             <div data-i18n="Products prices">اسعار المنتجات</div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item ">
                           <a href="employees.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                             <div data-i18n="employees">الموظفين </div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item ">
                           <a href="Always.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-square"></i>
                             <div data-i18n="Always">الدوام </div>
                           </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item active">
                           <a href="Services.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-square"></i>
                             <div data-i18n="Services">الخدمات  </div>
@@ -700,49 +700,29 @@
                <!-- Basic Layout -->
                <div class="row">
                 <div class="col-xl">
-                  <div class="card mb-4">
+                  <div class="card  mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span>  استيراد فواتير</strong>
-                      <p class="pt-2 pb-2 mt-3 fs-5">برجاء اختيار المحطة</p>
-                      <div class="row  mt-5 justify-content-center">
-                        <div class="col-xl-8 col-lg-6 col-md-6">
-                          <div class="card h-100 card-border-shadow-gray">
-                            <div class="row h-100 align-items-center">
-                              <div class="col-sm-5">
-                                <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/invoices.jpg" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"></span> تعديل الخدمة</strong>
+                    
+                      <form class="form-repeater mt-4 row">
 
-                                </div>
-                              </div>
-                              <div class="col-sm-7">
-                                <form class="row component-form  mt-4 pt-4 align-items-center">
-                            
-                                  <div class="col col-lg-8 mb-3">
-                                    
-                                      <label for="select2Basic" class="form-label">المحطه</label>
-                                      <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                                        <option value="AK">Alaska</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="CA">California</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="OR">Oregon</option>
-                                    
-                                      </select>
-                                  
-                                  </div>
-                                 <div class="col col-lg-3">
-                                  <button type="submit" class="btn btn-primary ">استيراد</button>
-                                 </div>
-                                 
-                                </form>
-                              </div>
-                            </div>
-                           
-                          </div>
-                          
+                        <div class="mb-3 col-lg-8 col-xl-6 col-12 mb-0">
+                          <label class="form-label" for="form-repeater-1-1">  اسم الخدمة<span class="start-form">*</span></label>
+                          <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" اسم الدوام" />
                         </div>
-                      </div>
-                   
+                     
+                        <div class="mb-3 col-lg-8 col-xl-6 col-12 mb-0">
+                          <label class="form-label" for="form-repeater-1-1">   اضافه صورة<span class="start-form">*</span></label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+                       
+
+                          <div class="col col-lg-8">
+                            <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                            <a href="all-services.html" class="btn btn-label-secondary waves-effect mx-3">مشاهدة الكل</a>
+                          </div>
+                       
+                       </form>
                      
                     </div>
                   </div>

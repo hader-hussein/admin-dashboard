@@ -291,4 +291,9 @@ font-size: 18px !important;
 .content-footer a{
   color: rgb(var(--theme-color))!important;
 }
-
+.img-tabel{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #5b5a5a;
+  border-radius: 50%;
+}
