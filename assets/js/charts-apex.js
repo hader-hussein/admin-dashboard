@@ -1140,17 +1140,19 @@
       legend: {
         show: true,
         position: 'top',
-        show: true,
-        floating: true,
+        // floating: true,
         fontSize: '16px',
-        position: 'right',
-        offsetX: 160,
+        // position: 'right',
+        horizontalAlign: 'start',
+        offsetX: 10,
         offsetY: 15,
         labels: {
           colors: legendColor,
-          useSeriesColors: false
+      
+          useSeriesColors: true
           
         }
+       
         ,
           formatter: function(seriesName, opts) {
             return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]+"%"
@@ -1225,12 +1227,13 @@
       legend: {
         show: true,
         position: 'top',
-        show: true,
-        floating: true,
+       
+        // floating: true,
         fontSize: '16px',
-        position: 'right',
-        offsetX: 160,
+        // position: 'right',
+        offsetX: 10,
         offsetY: 15,
+        horizontalAlign: 'start',
         labels: {
           colors: legendColor,
           useSeriesColors: false

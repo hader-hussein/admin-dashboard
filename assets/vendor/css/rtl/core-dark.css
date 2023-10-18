@@ -6307,7 +6307,7 @@ input:-internal-autofill-selected {
 }
 
 .bg-label-danger {
-  background-color: rgb(var(--theme-color)) !important;
+  background-color: #EA5455!important;
   color: #fff !important;
 }
 
@@ -12956,7 +12956,9 @@ html:not([dir=rtl]) .card .card-separator {
 
 .bg-danger {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--theme-color), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--theme-color), var(--bs-bg-opacity)) !important; */
+  background-color: rgba(var(234, 84, 85), var(--bs-bg-opacity)) !important;
+
 }
 
 .bg-light {
