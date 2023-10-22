@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title> Add data</title>
+    <title>change customers</title>
 
     <meta name="description" content="" />
 
@@ -251,7 +251,7 @@
                     data-bs-auto-close="outside"
                     aria-expanded="false">
                     <i class="ti ti-bell ti-md"></i>
-                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                    <span class="badge bg-danger rounded-pill badge-notifications text-bg-danger">5</span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end py-0">
                     <li class="dropdown-menu-header border-bottom">
@@ -587,7 +587,7 @@
                 <div class="container-xxl d-flex h-100">
                   <ul class="menu-inner">
                     <!-- Dashboards -->
-                    <li class="menu-item ">
+                    <li class="menu-item">
                       <a href="index.html" class="menu-link ">
                         <i class="menu-icon tf-icons ti ti-smart-home"></i>
                         <div data-i18n="Dashboards">Dashboards</div>
@@ -603,7 +603,7 @@
                       </a>
 
                       <ul class="menu-sub">
-                        <li class="menu-item">
+                        <li class="menu-item ">
                           <a href="addstation.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-menu-2"></i>
                             <div data-i18n="Add a station">اضافة محطة</div>
@@ -621,7 +621,7 @@
                             <div data-i18n="Products prices">اسعار المنتجات</div>
                           </a>
                         </li>
-                        <li class="menu-item active">
+                        <li class="menu-item">
                           <a href="employees.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                             <div data-i18n="employees">الموظفين </div>
@@ -707,7 +707,7 @@
                         </li>
                       </ul>
                     </li>
-                     <!-- Subscriptions -->
+                        <!-- Subscriptions -->
                   <li class="menu-item active">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">
                       <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
@@ -715,7 +715,7 @@
                     </a>
                     <ul class="menu-sub">
                       
-                      <li class="menu-item active">
+                      <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                           <i class="menu-icon tf-icons ti ti-users-group"></i>
                           <div data-i18n="Administration">الادراة</div>
@@ -727,7 +727,7 @@
                             </a>
                           </li>
                          
-                          <li class="menu-item active">
+                          <li class="menu-item">
                             <a href="add-Administration.html" class="menu-link">
                               <div data-i18n="Add data">اضافه بيانات</div>
                             </a>
@@ -744,8 +744,8 @@
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                      <li class="menu-item active">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle ">
                           <i class="menu-icon tf-icons ti ti-book"></i>
                           <div data-i18n="Customers">العملاء</div>
                         </a>
@@ -755,7 +755,7 @@
                               <div data-i18n="Dashboard">Dashboard</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item active">
                             <a href="add-Customers.html" class="menu-link">
                               <div data-i18n="add-customer">اضافه عملاء</div>
                             </a>
@@ -766,7 +766,7 @@
                             </a>
                           </li>
                           <li class="menu-item">
-                            <a href="add-Portfolio-customer.html" class="menu-link">
+                            <a href="add-Reports-customer.html" class="menu-link">
                               <div data-i18n="Portfolio">المحفظة</div>
                             </a>
                           </li>
@@ -782,112 +782,61 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
                <!-- Basic Layout -->
-             
+               <div class="row">
                 <div class="col-xl">
-                  <div class="card mb-4">
+                  <div class="card  mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">اضافه الاشتركات</span> </strong>
-                      <div class="row  mt-5 justify-content-center">
-                        <div class="col-xl-6 col-lg-10 col-md-10">
-                          <div class="card h-100 card-border-shadow-gray ">
-                            <div class="row h-100 align-items-center">
-                              <div class="col-sm-5">
-                                <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/boy-with-rocket-light.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
-
-                                </div>
-                              </div>
-                              <div class="col-sm-7 mt-md-0 mt-4">
-                                <div class="card-body text-sm-end text-center ps-sm-0">
-                                  <button data-bs-target="#addRoleModal" data-bs-toggle="modal" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
-                                   اضافة اشترك
-                                  </button>
-                                  <p class="mb-0 mt-1">Add Subscriptions, if it does not exist</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">تعديل العملاء</span> </strong>
+                      <form class="row component-form mt-4 pt-4 justify-content-md-start justify-content-center">
+                        <div class="col-11 col-lg-4 col-md-6 mb-3">
+                          <label class="form-label" for="basic-default-fullname">اسم الموظف<span class="start-form">*</span></label>
+                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم الموظف" />
                         </div>
-                      </div>
-                    
                      
+                        <div class="col-11 col-lg-4 col-md-6 mb-3">
+                          <label class="form-label" for="basic-default-pth"> رقم الهوية<span class="start-form">*</span></label>
+                          <input type="text" class="form-control" id="basic-default-pth" placeholder=" رقم الهوية " />
+  
+                        </div>
+                        <div class="col-11 col-lg-4 col-md-6 mb-3">
+                          <label class="form-label" for="basic-default-locetion">رقم الرخصة<span class="start-form">*</span></label>
+                          <input type="text" class="form-control" id="basic-default-locetion" placeholder="رقم الرخصة " />
+  
+                        </div>
+                        <div class="col-11 col-lg-4 col-md-6  mb-3">
+                          <label class="form-label" for="basic-default-line">  لوحة السيارة<span class="start-form">*</span></label>
+                          <input type="text" class="form-control" id="basic-default-line" placeholder=" لوحة السيارة  " />
+  
+                        </div>
+                       
+                        <div class="col-11 col-lg-4 col-md-6 mb-3">
+                          <label class="form-label" for="basic-default-phone"> نوع السيارة<span class="start-form">*</span></label>
+                          <input
+                            type="text"
+                            id="basic-default-phone"
+                            class="form-control phone-mask"
+                            placeholder=" نوع السيارة" />
+                        </div>
+                   
+                        <div class="col-11 col-lg-4 col-md-6 mb-3">
+                          <label class="form-label" for="basic-default-emile">  رقم الكارت<span class="start-form">*</span></label>
+                          <input type="text" class="form-control" id="basic-default-emile" placeholder=" رقم الكارت " />
+  
+                        </div>
+                       <div class="col-11 col-lg-8  mb-3">
+                        <button type="submit" class="btn btn-primary ">حفظ</button>
+                        <a href="all-customers.html"  class="btn btn-label-secondary waves-effect mx-md-3 mx-1">مشاهدة الكل</a>
+                       </div>
+                       
+                      </form>
+                       
                      
                     </div>
                   </div>
                 </div>
              
-           
-            <!-- Add station Modal -->
-            <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
-                <div class="modal-content p-1 p-md-3">
-                  <button
-                    type="button"
-                    class="btn-close btn-pinned"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                  <div class="modal-body">
-                    <div class="text-center mb-4">
-                      <h3 class="role-title mb-2">اضافه الاشتراك</h3>
-                    </div>
-                    <!-- Add employees form -->
-                    <form class="row component-form mt-4 pt-4 justify-content-md-start justify-content-center">
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-fullname">اسم الشركة<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم الشركة" />
-                      </div>
-                   
-   
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-line">  الرقم الضريبى<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-line" placeholder="رقم الضريبى  " />
-
-                      </div>
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-locetion">العنوان<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-locetion" placeholder="العنوان " />
-
-                      </div>
-                    
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-phone"> مدير الشركة<span class="start-form">*</span></label>
-                        <input
-                          type="text"
-                          id="basic-default-phone"
-                          class="form-control phone-mask"
-                          placeholder=" مدير الشركة" />
-                      </div>
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile">  IBANالحساب البنك 
-                          <span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-emile" placeholder=" IBANالحساب " />
-
-                      </div>
-                    
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile">  مرفق من العقد<span class="start-form">*</span></label>
-                        <input type="file" class="form-control" id="basic-default-emile" />
-
-                      </div>
-                      
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile"> تاريخ الاشتراك<span class="start-form">*</span></label>
-                        <input type="date" class="form-control" id="basic-default-emile" />
-
-                      </div>
-                   
-                     <div class="col-11 col-lg-12 mb-3">
-                      <button type="submit" class="btn btn-primary ">حفظ</button>
-                      <a href="all-Subscriptions.html"  class="btn btn-label-secondary waves-effect mx-md-3 mx-2 mt-md-0 mt-1">مشاهدة الكل</a>
-                     </div>
-                     
-                    </form>
-                    <!--/ Add employees form -->
-                  </div>
-                </div>
               </div>
-            </div>
-            <!--/ Add station Modal -->
+            
             
             </div>
           

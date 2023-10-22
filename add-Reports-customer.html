@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title> Add data</title>
+    <title>add-Reports-customer </title>
 
     <meta name="description" content="" />
 
@@ -715,7 +715,7 @@
                     </a>
                     <ul class="menu-sub">
                       
-                      <li class="menu-item active">
+                      <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                           <i class="menu-icon tf-icons ti ti-users-group"></i>
                           <div data-i18n="Administration">الادراة</div>
@@ -727,7 +727,7 @@
                             </a>
                           </li>
                          
-                          <li class="menu-item active">
+                          <li class="menu-item ">
                             <a href="add-Administration.html" class="menu-link">
                               <div data-i18n="Add data">اضافه بيانات</div>
                             </a>
@@ -744,7 +744,7 @@
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                           <i class="menu-icon tf-icons ti ti-book"></i>
                           <div data-i18n="Customers">العملاء</div>
@@ -760,7 +760,7 @@
                               <div data-i18n="add-customer">اضافه عملاء</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item active">
                             <a href="add-Reports-customer.html" class="menu-link">
                               <div data-i18n="Reports">التقارير</div>
                             </a>
@@ -786,27 +786,52 @@
                 <div class="col-xl">
                   <div class="card mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">اضافه الاشتركات</span> </strong>
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">تقرير العملاء</span> </strong>
                       <div class="row  mt-5 justify-content-center">
-                        <div class="col-xl-6 col-lg-10 col-md-10">
-                          <div class="card h-100 card-border-shadow-gray ">
+                        <div class="col-xl-8 col-lg-10 col-md-10">
+                          <div class="card h-100 card-border-shadow-gray">
                             <div class="row h-100 align-items-center">
                               <div class="col-sm-5">
                                 <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/boy-with-rocket-light.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
+                                  <img src="./assets/img/illustrations/boy-verify-email-light.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
 
                                 </div>
                               </div>
-                              <div class="col-sm-7 mt-md-0 mt-4">
-                                <div class="card-body text-sm-end text-center ps-sm-0">
-                                  <button data-bs-target="#addRoleModal" data-bs-toggle="modal" class="btn btn-primary mb-2 text-nowrap add-new-role waves-effect waves-light">
-                                   اضافة اشترك
-                                  </button>
-                                  <p class="mb-0 mt-1">Add Subscriptions, if it does not exist</p>
-                                </div>
+                              <div class="col-sm-7">
+                                <form class="form-repeater mt-4 row justify-content-center">
+
+                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
+                                    <label class="form-label" for="form-repeater-1-1">  اسم الموظف<span class="start-form">*</span></label>
+                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" اسم الموظف">
+                                  </div>
+                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
+                                    <label class="form-label" for="select5Basic">   نوع الوقود<span class="start-form">*</span></label>
+                                    <select id="select5Basic" class="select2 form-select" data-allow-clear="true">
+                                      <option value="AK">  90</option>
+                                      <option value="HI">91</option>
+                                      <option value="CA">95</option>
+                                      <option value="NV">ديزل</option>
+                                  
+                                    </select>
+                                  </div>
+                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
+                                    <label class="form-label" for="form-repeater-data">   من تاريخ<span class="start-form">*</span></label>
+                                    <input type="date" id="form-repeater-data" class="form-control" >
+                                  </div>
+                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
+                                    <label class="form-label" for="form-repeater-data1">   الى تاريخ<span class="start-form">*</span></label>
+                                    <input type="date" id="form-repeater-data1" class="form-control" >
+                                  </div>
+                                    <div class="col-11 col-lg-11 mb-3">
+                                      <a href="all-reports-customers.html" class="btn btn-primary waves-effect mx-3"> عرض التقرير</a>
+                                    </div>
+                                 
+                                 </form>
                               </div>
                             </div>
+                           
                           </div>
+                          
                         </div>
                       </div>
                     
@@ -816,78 +841,7 @@
                   </div>
                 </div>
              
-           
-            <!-- Add station Modal -->
-            <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
-                <div class="modal-content p-1 p-md-3">
-                  <button
-                    type="button"
-                    class="btn-close btn-pinned"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                  <div class="modal-body">
-                    <div class="text-center mb-4">
-                      <h3 class="role-title mb-2">اضافه الاشتراك</h3>
-                    </div>
-                    <!-- Add employees form -->
-                    <form class="row component-form mt-4 pt-4 justify-content-md-start justify-content-center">
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-fullname">اسم الشركة<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-fullname" placeholder="اسم الشركة" />
-                      </div>
-                   
-   
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-line">  الرقم الضريبى<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-line" placeholder="رقم الضريبى  " />
 
-                      </div>
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-locetion">العنوان<span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-locetion" placeholder="العنوان " />
-
-                      </div>
-                    
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-phone"> مدير الشركة<span class="start-form">*</span></label>
-                        <input
-                          type="text"
-                          id="basic-default-phone"
-                          class="form-control phone-mask"
-                          placeholder=" مدير الشركة" />
-                      </div>
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile">  IBANالحساب البنك 
-                          <span class="start-form">*</span></label>
-                        <input type="text" class="form-control" id="basic-default-emile" placeholder=" IBANالحساب " />
-
-                      </div>
-                    
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile">  مرفق من العقد<span class="start-form">*</span></label>
-                        <input type="file" class="form-control" id="basic-default-emile" />
-
-                      </div>
-                      
-                      <div class="col-11 col-lg-4 mb-3">
-                        <label class="form-label" for="basic-default-emile"> تاريخ الاشتراك<span class="start-form">*</span></label>
-                        <input type="date" class="form-control" id="basic-default-emile" />
-
-                      </div>
-                   
-                     <div class="col-11 col-lg-12 mb-3">
-                      <button type="submit" class="btn btn-primary ">حفظ</button>
-                      <a href="all-Subscriptions.html"  class="btn btn-label-secondary waves-effect mx-md-3 mx-2 mt-md-0 mt-1">مشاهدة الكل</a>
-                     </div>
-                     
-                    </form>
-                    <!--/ Add employees form -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--/ Add station Modal -->
             
             </div>
           
