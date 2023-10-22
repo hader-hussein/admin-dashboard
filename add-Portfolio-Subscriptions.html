@@ -801,9 +801,14 @@
                                 <form class="form-repeater mt-4 row justify-content-center">
 
                                   <div class="mb-3 col-lg-8 col-xl-10 col-11">
-                                    <label class="form-label" for="form-repeater-1-1">  اسم الشركة<span class="start-form">*</span></label>
-                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" اسم الشركة">
-                                  </div>
+                                    <label class="form-label" for="select3Basic">  اسم الشركة<span class="start-form">*</span></label>
+                                    <select id="select3Basic" class="select2 form-select" data-allow-clear="true">
+                                      <option value="AK">النصر</option>
+                                      <option value="HI">العبد</option>
+                                      <option value="NV">Nevada</option>
+                                      <option value="OR">Oregon</option>
+                                  
+                                    </select>                                  </div>
                                   <div class="mb-3 col-lg-8 col-xl-10 col-11">
                                     <label class="form-label" for="select2Basic">   نوع الوقود<span class="start-form">*</span></label>
                                     <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
@@ -839,33 +844,31 @@
                         <div class="col-xl-4 col-lg-2 card card-border-shadow-success">
                           <div class="card-body">
                             <h2>رصيد المحفظة</h2>
-                            <div class="table-responsive text-nowrap">
-                              <table class="table table-bordered">
-                                <tbody>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">91</span>
-                                    </td>
-                                    <td>1000ريال</td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">95</span>
-                                    </td>
-                                    <td>1000ريال </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <span class="fw-bold">ديزل </span>
-                                    </td>
-                                    <td> 1000ريال </td>
-                                  </tr>
-                                 
-                                 
-                                  
-                                </tbody>
-                              </table>
-                            </div>
+                            <canvas id="doughnutChart" class="chartjs mb-4" data-height="350"></canvas>
+                            <ul class="doughnut-legend d-flex justify-content-around ps-0 mb-2 pt-1">
+                              <li class="ct-series-0 d-flex flex-column">
+                                <h5 class="mb-0">91</h5>
+       
+                                <span
+                                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                                  style="background-color: #28c76f; width: 35px; height: 6px"></span>
+                                <div class="text-muted">1000ريال</div>
+                              </li>
+                              <li class="ct-series-1 d-flex flex-column">
+                                <h5 class="mb-0">95</h5>
+                                <span
+                                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                                  style="background-color: #EA5455; width: 35px; height: 6px"></span>
+                                <div class="text-muted">2000 ريال</div>
+                              </li>
+                              <li class="ct-series-2 d-flex flex-column">
+                                <h5 class="mb-0">ديزل</h5>
+                                <span
+                                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                                  style="background-color: #FFEB3B; width: 35px; height: 6px"></span>
+                                <div class="text-muted">500ريال</div>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                         <!---->
@@ -979,6 +982,8 @@
     <script src="./assets/vendor/libs/cleavejs/cleave-phone.js"></script>
     <script src="./assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.js"></script>
     <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
+    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
+
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
 
@@ -990,6 +995,8 @@
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/forms-selects.js"></script>
      <script src="./assets/js/forms-extras.js"></script>
+     <script src="./assets/js/charts-chartjs.js"></script>
+
 
   </body>
 </html>

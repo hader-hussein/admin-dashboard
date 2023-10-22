@@ -796,11 +796,11 @@
     const doughnutChartVar = new Chart(doughnutChart, {
       type: 'doughnut',
       data: {
-        labels: ['Tablet', 'Mobile', 'Desktop'],
+        labels: ['95', '91', 'ديزل'],
         datasets: [
           {
             data: [10, 10, 80],
-            backgroundColor: [cyanColor, orangeLightColor, config.colors.primary],
+            backgroundColor: ["#EA5455", "#28c76f", "#FFEB3B"],
             borderWidth: 0,
             pointStyle: 'rectRounded'
           }

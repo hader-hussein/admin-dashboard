@@ -823,6 +823,8 @@
                         <td>111111</td>
                         <td >
                           <div class="d-flex">
+                            <button class="btn bg-primary text-bg-primary p-1 d-flex align-items-center justify-content-center me-3 rounded" data-bs-target="#addRoleModal" data-bs-toggle="modal" title="اظهر البيانات"><i class=" ti ti-eye-check fs-4"></i> </button>
+
                             <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="change-customer.html" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
                             <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
                           
@@ -841,7 +843,104 @@
             </div>
           
             <!--/ Content -->
+ <!-- Add station Modal -->
+ <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-add-new-role">
+    <div class="modal-content p-1 p-md-3">
+      <button
+        type="button"
+        class="btn-close btn-pinned"
+        data-bs-dismiss="modal"
+        aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <h3 class="role-title mb-2"> بيانات الشركة</h3>
+        </div>
+        <div class="row">
+          <!--data-->
+          <div class="col">
+            <div class="card card-border-shadow-success mt-4">
+              <div class="card-body">
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="fw-bold">اسم الموظف /اسم الشركة	 </span>
+                        </td>
+                        <td>النصر</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-bold"> رقم الهوية	 </span>
+                        </td>
+                        <td>102222</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-bold"> رقم الرخصة	  </span>
+                        </td>
+                        <td>1222222 </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-bold">لوحة السيارة	 </span>
+                        </td>
+                        <td>00000000</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-bold">نوع السيارة	 </span>
+                        </td>
+                        <td>mpm</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="fw-bold"> رقم الكارت	 </span>
+                        </td>
+                        <td>12222222</td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end-data-->
+          <div class="col-xl-4 col-lg-2">
+            <canvas id="doughnutChart" class="chartjs mb-4" data-height="350"></canvas>
+            <ul class="doughnut-legend d-flex justify-content-around ps-0 mb-2 pt-1">
+              <li class="ct-series-0 d-flex flex-column">
+                <h5 class="mb-0">91</h5>
 
+                <span
+                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                  style="background-color: #28c76f; width: 35px; height: 6px"></span>
+                <div class="text-muted">1000ريال</div>
+              </li>
+              <li class="ct-series-1 d-flex flex-column">
+                <h5 class="mb-0">95</h5>
+                <span
+                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                  style="background-color: #EA5455; width: 35px; height: 6px"></span>
+                <div class="text-muted">2000 ريال</div>
+              </li>
+              <li class="ct-series-2 d-flex flex-column">
+                <h5 class="mb-0">ديزل</h5>
+                <span
+                  class="badge badge-dot my-2 cursor-pointer rounded-pill"
+                  style="background-color: #FFEB3B; width: 35px; height: 6px"></span>
+                <div class="text-muted">500ريال</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Add station Modal -->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -940,6 +1039,7 @@
     <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
 
     <!-- Page JS -->
     <script src="./assets/js/ui-navbar.js"></script>
@@ -949,6 +1049,7 @@
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/forms-selects.js"></script>
      <script src="./assets/js/forms-extras.js"></script>
+     <script src="./assets/js/charts-chartjs.js"></script>
 
   </body>
 </html>
