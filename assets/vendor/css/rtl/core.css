@@ -1896,7 +1896,7 @@ progress {
 
 .table-light {
   --bs-table-color: #4b465c;
-  --bs-table-bg: #dfdfe3;
+  --bs-table-bg: #f8f7fa;
   --bs-table-border-color: #c1c0c8;
   --bs-table-striped-bg: #dcdce0;
   --bs-table-striped-color: #4b465c;
@@ -6677,7 +6677,7 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
 }
 
 .table-light {
-  --bs-table-bg: #dfdfe3;
+  --bs-table-bg: #f8f7fa;
   --bs-table-striped-bg: #dcdce0;
   --bs-table-striped-color: #4b465c;
   --bs-table-active-bg: #d3d3d8;

@@ -376,3 +376,6 @@ font-size: 18px !important;
 .form-check-emoji{
   text-align: center;
 }
+div.dataTables_wrapper .add-new{
+display: none !important;
+}

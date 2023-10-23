@@ -117,7 +117,7 @@ $(function () {
             }
             // Creates full output for Product name and product_brand
             var $row_output =
-              '<div class="d-flex justify-content-start align-items-center product-name">' +
+              '<div class="d-flex justify-content-end align-items-center product-name">' +
               '<div class="avatar-wrapper">' +
               '<div class="avatar avatar me-2 rounded-2 bg-label-secondary">' +
               $output +
@@ -264,7 +264,7 @@ $(function () {
       ],
       order: [2, 'asc'], //set any columns order asc/desc
       dom:
-        '<"card-header d-flex border-top rounded-0 flex-wrap py-2"' +
+        '<"card-header d-flex border-top rounded-0 flex-wrap py-2 justify-content-between"' +
         '<"me-5 ms-n2 pe-5"f>' +
         '<"d-flex justify-content-start justify-content-md-end align-items-baseline"<"dt-action-buttons d-flex flex-column align-items-start align-items-md-center justify-content-sm-center mb-3 mb-md-0 pt-0 gap-4 gap-sm-0 flex-sm-row"lB>>' +
         '>t' +
