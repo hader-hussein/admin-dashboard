@@ -58,6 +58,8 @@
     <script src="./assets/vendor/js/template-customizer.js"></script>
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="./assets/js/config.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   </head>
 
   <body>
@@ -766,6 +768,11 @@
                             </a>
                           </li>
                           <li class="menu-item">
+                            <a href="add-invoice-customer.html" class="menu-link">
+                              <div data-i18n="invoice">الفاتورة</div>
+                            </a>
+                          </li>
+                          <li class="menu-item">
                             <a href="add-Portfolio-customer.html" class="menu-link">
                               <div data-i18n="Portfolio">المحفظة</div>
                             </a>
@@ -787,19 +794,23 @@
              <div class="card mb-4">
                <div class="card-body p-4">
                 <strong class="text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">كل الاحصائيات</span> </strong>
-                <div class="row row-cols-lg-3 row-col-md-2 row-cols-1 mt-4 g-3">
+                <div class="row row-cols-lg-2
+                row-col-md-2 row-cols-1 mt-4 g-3">
                   <!--card-->
                   <div class="col">
                     <div class="card card-border-shadow-success">
                       <div class="card-body">
                         <h6 class="fw-bold fs-4">هل انت  راضى عن الخدمة؟</h6>
-                        <div class="row row-cols-lg-2">
+                        <div class="row row-cols-lg-2 align-items-center">
                           <div class="col">
                              <p>عدد الذين قالو  نعم:<span class="fw-bold">6</span></p>
                              <p>عدد الذين قالو  لا:<span class="fw-bold">0</span></p>
  
                           </div>
-                          <div class="col"></div>
+                          <div class="col">
+                            <div id="piechart" ></div>
+
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -810,7 +821,7 @@
                     <div class="card card-border-shadow-success">
                       <div class="card-body">
                         <h6 class="fw-bold fs-4"> اقتراح لى تحسين الخدمة </h6>
-                        <div class="row row-cols-lg-2">
+                        <div class="row row-cols-lg-2 align-items-center">
                           <div class="col">
                              <ul>
                                <li>fffffff</li>
@@ -819,7 +830,9 @@
                              </ul>
   
                           </div>
-                          <div class="col"></div>
+                          <div class="col">
+                            <div id="piechart-tow" ></div>
+                          </div>
                         </div>
                       </div>
                      </div>
@@ -829,13 +842,16 @@
                       <div class="card card-border-shadow-success">
                         <div class="card-body">
                           <h6 class="fw-bold fs-4">قيم نسبة رضاك عن الخدمة</h6>
-                          <div class="row row-cols-lg-2">
+                          <div class="row row-cols-lg-2 align-items-center">
                             <div class="col">
                                <p>عدد    التقيمات:<span class="fw-bold">6</span></p>
-                               <p>    معد التقيمات:<span class="fw-bold">0</span></p>
+                               <p>    معدل التقيمات:<span class="fw-bold">0</span></p>
    
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                              <div id="piechart-there" ></div>
+
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -845,13 +861,15 @@
                       <div class="card card-border-shadow-success">
                         <div class="card-body">
                           <h6 class="fw-bold fs-4">    مارايك بالخدمة؟</h6>
-                          <div class="row row-cols-lg-2">
+                          <div class="row row-cols-lg-2 align-items-center">
                             <div class="col">
                                <p>عدد    التقيمات:<span class="fw-bold">6</span></p>
                                <p>    معد التقيمات:<span class="fw-bold">0</span></p>
    
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                              <div id="piechart-for"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -861,13 +879,15 @@
                       <div class="card card-border-shadow-success">
                         <div class="card-body">
                           <h6 class="fw-bold fs-4">     هل ترشح الخدمة لاحد معارفك</h6>
-                          <div class="row row-cols-lg-2">
+                          <div class="row row-cols-lg-2 align-items-center">
                             <div class="col">
                                <p>    نعم ارشح:<span class="fw-bold">6</span></p>
                                <p>     لا ارشح:<span class="fw-bold">0</span></p>
    
                             </div>
-                            <div class="col"></div>
+                            <div class="col">
+                              <div id="piechart-fife"></div>
+                            </div>
                           </div>
                         </div>
                       </div>

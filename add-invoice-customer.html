@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Import invoices</title>
+    <title>add-invoice-custemer </title>
 
     <meta name="description" content="" />
 
@@ -251,7 +251,7 @@
                     data-bs-auto-close="outside"
                     aria-expanded="false">
                     <i class="ti ti-bell ti-md"></i>
-                    <span class="badge bg-danger rounded-pill badge-notifications text-bg-danger">5</span>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end py-0">
                     <li class="dropdown-menu-header border-bottom">
@@ -594,9 +594,9 @@
                       </a>
                     
                     </li>
-                    
+
                     <!-- stations -->
-                    <li class="menu-item active">
+                    <li class="menu-item">
                       <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
                         <div data-i18n="stations">محطات</div>
@@ -609,7 +609,7 @@
                             <div data-i18n="Add a station">اضافة محطة</div>
                           </a>
                         </li>
-                        <li class="menu-item active">
+                        <li class="menu-item">
                           <a href="Import-invoices.html" class="menu-link" target="_blank">
                             <i class="menu-icon tf-icons ti ti-layout-distribute-vertical"></i>
                             <div data-i18n="Import invoices"> استيراد فواتير</div>
@@ -707,15 +707,15 @@
                         </li>
                       </ul>
                     </li>
-                       <!-- Subscriptions -->
-                  <li class="menu-item">
+                     <!-- Subscriptions -->
+                  <li class="menu-item active">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">
                       <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
                       <div data-i18n="Subscriptions">الاشتركات</div>
                     </a>
                     <ul class="menu-sub">
                       
-                      <li class="menu-item">
+                      <li class="menu-item ">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                           <i class="menu-icon tf-icons ti ti-users-group"></i>
                           <div data-i18n="Administration">الادراة</div>
@@ -727,24 +727,24 @@
                             </a>
                           </li>
                          
-                          <li class="menu-item">
+                          <li class="menu-item ">
                             <a href="add-Administration.html" class="menu-link">
                               <div data-i18n="Add data">اضافه بيانات</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item ">
                             <a href="add-Reports-Subscriptions.html" class="menu-link">
                               <div data-i18n="Reports">التقارير</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item ">
                             <a href="add-Portfolio-Subscriptions.html" class="menu-link">
                               <div data-i18n="Portfolio">المحفظة</div>
                             </a>
                           </li>
                         </ul>
                       </li>
-                      <li class="menu-item">
+                      <li class="menu-item active">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                           <i class="menu-icon tf-icons ti ti-book"></i>
                           <div data-i18n="Customers">العملاء</div>
@@ -765,12 +765,12 @@
                               <div data-i18n="Reports">التقارير</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item active">
                             <a href="add-invoice-customer.html" class="menu-link">
                               <div data-i18n="invoice">الفاتورة</div>
                             </a>
                           </li>
-                          <li class="menu-item">
+                          <li class="menu-item ">
                             <a href="add-Portfolio-customer.html" class="menu-link">
                               <div data-i18n="Portfolio">المحفظة</div>
                             </a>
@@ -787,63 +787,106 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
                <!-- Basic Layout -->
-               <div class="row">
+             
                 <div class="col-xl">
                   <div class="card mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">استيراد فواتير</span>  </strong>
-                      <p class="pt-2 pb-2 mt-3 fs-5">برجاء اختيار المحطة</p>
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium"> الفاتورة </span></strong>
                       <div class="row  mt-5 justify-content-center">
                         <div class="col-xl-8 col-lg-10 col-md-10">
                           <div class="card h-100 card-border-shadow-gray">
                             <div class="row h-100 align-items-center">
                               <div class="col-sm-5">
                                 <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
-                                  <img src="./assets/img/illustrations/invoices.jpg" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
+                                  <img src="./assets/img/illustrations/Checklist.jpg" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
 
                                 </div>
                               </div>
                               <div class="col-sm-7">
-                                <form class="row component-form  mt-4 pt-4 align-items-center justify-content-center">
-                            
-                                  <div class="col-11 col-lg-8 mb-3">
-                                    
-                                      <label for="select2Basic" class="form-label">المحطه</label>
-                                      <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                                        <option value="AK">Alaska</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="CA">California</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="OR">Oregon</option>
-                                    
-                                      </select>
-                                  
+                                <form class="form-repeater mt-4 row justify-content-center">
+
+                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
+                                    <label class="form-label" for="form-repeater-1-1">   رقم الفاتورة<span class="start-form">*</span></label>
+                                    <input type="text" id="form-repeater-1-1" class="form-control" placeholder="  رقم الفاتورة">
                                   </div>
-                                 <div class="col-11 col-lg-3 mb-md-0 mb-3">
-                                  <button type="submit" class="btn btn-primary ">استيراد</button>
-                                 </div>
                                  
-                                </form>
+                                    <div class="col-11 col-lg-10 mb-3">
+                                      <button type="submit" class="btn btn-primary " data-bs-target="#addRoleModal" data-bs-toggle="modal">عرض</button>
+
+                                    </div>
+                                 
+                                 </form>
                               </div>
                             </div>
                            
                           </div>
                           
                         </div>
+                       
                       </div>
-                   
+                    
+                     
                      
                     </div>
                   </div>
                 </div>
              
-              </div>
-            
+
             
             </div>
           
             <!--/ Content -->
+<!-- Add invoice Modal -->
+<div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+    <div class="modal-content p-3 p-md-3">
+      <button
+        type="button"
+        class="btn-close btn-pinned"
+        data-bs-dismiss="modal"
+        aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <h3 class="role-title mb-2">  عرض الفاتورة</h3>
+        </div>
+        <!-- Add invoice form -->
+        <div class="card mt-5">
+          <div class="table-responsive text-nowrap rounded">
+            <table class="table table-bordered table-hover rounded">
+              <thead class="table-light">
+                <tr class="fw-bold">
+                  <th class="fw-bold">التسلسل</th>
+                  <th class="fw-bold"> رقم الفاتورة</th>
+                  <th class="fw-bold">تاريخ الفاتورة</th>
+                  <th class="fw-bold">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="table-border-bottom-0">
+                <tr>
+                  <td>
+                   1
+                  </td>
+                  <td> 1111111</td>
+            
+                  <td>   9-5-2023</td>
 
+                  <td class="d-flex">
+                    <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
+                    <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
+                  
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+         </div>
+        <!--/ Add invoice form -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Add invoice Modal -->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">

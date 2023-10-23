@@ -766,6 +766,11 @@
                             </a>
                           </li>
                           <li class="menu-item">
+                            <a href="add-invoice-customer.html" class="menu-link">
+                              <div data-i18n="invoice">الفاتورة</div>
+                            </a>
+                          </li>
+                          <li class="menu-item">
                             <a href="add-Portfolio-customer.html" class="menu-link">
                               <div data-i18n="Portfolio">المحفظة</div>
                             </a>
@@ -781,7 +786,7 @@
             <!-- / Menu -->
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="row d-flex justify-content-between  mb-3 align-items-center pt-4">
+              <div class="row d-flex justify-content-between  mb-3 align-items-center pt-4 mx-0">
                 <div class="col">
                   <strong class="text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">الاشتركات</span>  </strong>
 
@@ -907,31 +912,7 @@
                       </div>
                       <!--end-data-->
                       <div class="col-xl-4 col-lg-2">
-                        <canvas id="doughnutChart" class="chartjs mb-4" data-height="350"></canvas>
-                        <ul class="doughnut-legend d-flex justify-content-around ps-0 mb-2 pt-1">
-                          <li class="ct-series-0 d-flex flex-column">
-                            <h5 class="mb-0">91</h5>
-   
-                            <span
-                              class="badge badge-dot my-2 cursor-pointer rounded-pill"
-                              style="background-color: #28c76f; width: 35px; height: 6px"></span>
-                            <div class="text-muted">1000ريال</div>
-                          </li>
-                          <li class="ct-series-1 d-flex flex-column">
-                            <h5 class="mb-0">95</h5>
-                            <span
-                              class="badge badge-dot my-2 cursor-pointer rounded-pill"
-                              style="background-color: #EA5455; width: 35px; height: 6px"></span>
-                            <div class="text-muted">2000 ريال</div>
-                          </li>
-                          <li class="ct-series-2 d-flex flex-column">
-                            <h5 class="mb-0">ديزل</h5>
-                            <span
-                              class="badge badge-dot my-2 cursor-pointer rounded-pill"
-                              style="background-color: #FFEB3B; width: 35px; height: 6px"></span>
-                            <div class="text-muted">500ريال</div>
-                          </li>
-                        </ul>
+                       <div id="donutCharte-sub"></div>
                       </div>
                     </div>
                   </div>
@@ -1037,7 +1018,6 @@
     <script src="./assets/vendor/libs/jquery-repeater/jquery-repeater.js"></script>
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/vendor/libs/chartjs/chartjs.js"></script>
 
     <!-- Page JS -->
     <script src="./assets/js/ui-navbar.js"></script>
@@ -1047,7 +1027,7 @@
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/forms-selects.js"></script>
      <script src="./assets/js/forms-extras.js"></script>
-     <script src="./assets/js/charts-chartjs.js"></script>
+    
 
   </body>
 </html>
