@@ -795,52 +795,65 @@
                       <div class="row  mt-5 justify-content-center mx-0">
                         <div class="col-xl-8 col-lg-10 col-md-10">
                           <div class="card h-100 card-border-shadow-gray">
-                            <div class="row h-100 align-items-center">
-                              <div class="col-sm-5">
                                 <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-3">
                                   <img src="./assets/img/illustrations/page-pricing-standard.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="300">
 
                                 </div>
-                              </div>
-                              <div class="col-sm-7">
-                                <form class="form-repeater mt-4 row justify-content-center">
-
-                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
-                                    <label class="form-label" for="select3Basic">  اسم الشركة<span class="start-form">*</span></label>
-                                    <select id="select3Basic" class="select2 form-select" data-allow-clear="true">
-                                      <option value="AK">النصر</option>
-                                      <option value="HI">العبد</option>
-                                      <option value="NV">Nevada</option>
-                                      <option value="OR">Oregon</option>
-                                  
-                                    </select>                                  </div>
-                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
-                                    <label class="form-label" for="select2Basic">   نوع الوقود<span class="start-form">*</span></label>
-                                    <select id="select2Basic" class="select2 form-select" data-allow-clear="true">
-                                      <option value="AK">90</option>
-                                      <option value="HI">95</option>
-                                      <option value="CA">California</option>
-                                      <option value="NV">Nevada</option>
-                                      <option value="OR">Oregon</option>
-                                  
-                                    </select>
+                              
+                                <form class="form-repeater mt-4 row justify-content-center mx-0">
+                                  <div data-repeater-list="group-a">
+                                    <div data-repeater-item class="row">
+                                      <div class="mb-3 col-lg-8 col-xl-6 col-11">
+                                        <label class="form-label" for="select3Basic">  اسم الشركة<span class="start-form">*</span></label>
+                                        <select id="select3Basic" class="select2 form-select" data-allow-clear="true">
+                                          <option value="AK">النصر</option>
+                                          <option value="HI">العبد</option>
+                                          <option value="NV">Nevada</option>
+                                          <option value="OR">Oregon</option>
+                                      
+                                        </select>  
+                                     </div>
+                                      <div class="mb-3 col-lg-6 col-xl-6 col-11">
+                                        <label class="form-label" for="select2Basic">   نوع الوقود<span class="start-form">*</span></label>
+                                        <select id="select2Basic" class=" form-select" data-allow-clear="true">
+                                          <option value="NV">الكل</option>
+                                          <option value="AK">91</option>
+                                          <option value="HI">95</option>
+                                          <option value="CA">ديزل</option>
+                                        
+                                         
+                                        </select>
+                                      </div>
+                                      <div class="mb-3 col-lg-6 col-xl-6 col-11">
+                                        <label class="form-label" for="form-repeater-data">   الكمية <span class="start-form">*</span></label>
+                                        <input type="text" id="form-repeater-data" class="form-control" >
+                                      </div>
+                                      <div class="mb-3 col-lg-6 col-xl-6 col-11">
+                                        <label class="form-label" for="form-repeater-data1">    السعر<span class="start-form">*</span></label>
+                                        <input type="text" id="form-repeater-data1" class="form-control" >
+                                      </div>
+                                      <div class="mb-3 col-lg-12 col-xl-2 col-12 d-flex align-items-center mb-0">
+                                        <button class="btn btn-label-danger" data-repeater-delete>
+                                          <i class="ti ti-x ti-xs me-1"></i>
+                                          <span class="align-middle">Delete</span>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <button class="btn btn-primary" data-repeater-create>
+                                        <i class="ti ti-plus me-1"></i>
+                                        <span class="align-middle">Add New</span>
+                                      </button>
+                                    </div>
                                   </div>
-                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
-                                    <label class="form-label" for="form-repeater-data">   الكمية <span class="start-form">*</span></label>
-                                    <input type="text" id="form-repeater-data" class="form-control" >
-                                  </div>
-                                  <div class="mb-3 col-lg-8 col-xl-10 col-11">
-                                    <label class="form-label" for="form-repeater-data1">    السعر<span class="start-form">*</span></label>
-                                    <input type="text" id="form-repeater-data1" class="form-control" >
-                                  </div>
-                                    <div class="col-11 col-lg-10 mb-3">
+                                
+                                    <div class="col-11 col-lg-12 mb-3 text-center">
                                       <button type="submit" class="btn btn-primary ">حفظ</button>
 
                                     </div>
                                  
                                  </form>
-                              </div>
-                            </div>
+                           
                            
                           </div>
                           

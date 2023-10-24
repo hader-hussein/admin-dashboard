@@ -379,3 +379,16 @@ font-size: 18px !important;
 div.dataTables_wrapper .add-new{
 display: none !important;
 }
+
+    option:hover {
+      background-color: lime !important;
+      box-shadow: 0 0 10px 100px #4ddc3b inset !important;
+    }
+
+select:focus>option:checked
+
+{
+ 
+  background-color:rgb(var(--theme-color))!important;
+  /* selected */
+}

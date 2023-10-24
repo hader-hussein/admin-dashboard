@@ -282,9 +282,12 @@ barChartConfigr = {
       }
     }
   },
-  // dataLabels: {
-  //   enabled: false
-  // },
+  dataLabels: {
+    enabled: true,
+    style: {
+    colors: "#000"
+    }
+  },
   legend: {
     show: true,
     position: 'top',
@@ -1601,10 +1604,10 @@ barChartr.render();
       },
       dataLabels: {
         enabled: true,
+   
         formatter: function (val, opt) {
           return parseInt(val, 10) + '%';
         }
-        
       },colors: ["#EA5455", "#28c76f","#ffeb3b"],
       legend: {
         show: true,
@@ -1630,7 +1633,7 @@ barChartr.render();
               },
               value: {
                 fontSize: '1.2rem',
-                color: legendColor,
+                color: "#000",
                 fontFamily: 'Public Sans',
                 formatter: function (val) {
                   return parseInt(val, 10) + '%';
