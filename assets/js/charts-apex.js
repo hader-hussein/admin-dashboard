@@ -247,9 +247,9 @@
           }
         }
       },
-      // fill: {
-      //   opacity: 1
-      // }
+      fill: {
+        opacity: 1
+      }
     };
   if (typeof barChartEl !== undefined && barChartEl !== null) {
     const barChart = new ApexCharts(barChartEl, barChartConfig);
