@@ -256,6 +256,99 @@
     barChart.render();
   }
 // Bar Chart2
+const barChartElr = document.querySelector('#barChart-tow'),
+barChartConfigr = {
+  chart: {
+    height: 400,
+    type: 'bar',
+    // stacked: true,
+    parentHeightOffset: 0,
+    toolbar: {
+      show: false
+    }
+  },
+  plotOptions: {
+    bar: {
+      columnWidth: '15%',
+      distributed: true,
+     
+      colors: {
+        backgroundBarColors: [
+          "#EA545580",
+      "#28c76f96",
+      "#ffeb3b5c",
+        ],
+        backgroundBarRadius: 10
+      }
+    }
+  },
+  // dataLabels: {
+  //   enabled: false
+  // },
+  legend: {
+    show: true,
+    position: 'top',
+    horizontalAlign: 'start',
+    labels: {
+      colors: legendColor,
+      useSeriesColors: false
+    }
+  },
+  stroke: {
+    show: true,
+    // colors: ['transparent']
+  },
+  grid: {
+    borderColor: borderColor,
+    xaxis: {
+      lines: {
+        show: true
+      }
+    }
+  },
+  series: [
+    {
+     
+      data: [90,28,47]
+    },
+    
+  ],colors: [
+    "#EA5455",
+    "#28c76f",
+    "#FFEB3B",
+    
+  ],
+  xaxis: {
+    categories: ['95', '91', 'ديزل'],
+    axisBorder: {
+      show: false
+    },
+    axisTicks: {
+      show: false
+    },
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  yaxis: {
+    labels: {
+      style: {
+        colors: labelColor,
+        fontSize: '13px'
+      }
+    }
+  },
+  fill: {
+    opacity: 1
+  }
+};
+if (typeof barChartElr !== undefined && barChartElr !== null) {
+const barChartr = new ApexCharts(barChartElr, barChartConfigr);
+barChartr.render();
+}
   // --------------------------------------------------------------------
   const barChartEls = document.querySelector('#barCharts'),
     barChartConfigs = {

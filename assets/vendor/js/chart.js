@@ -30,76 +30,8 @@ for(const input of inputs) {
   }
 }/*** */
  ////
- var options = {
 
-  series: [{
-  name: '91',
-  data: [44, 55, 57, 56 ],
-
- 
-}, {
-  name: '95',
-  data: [76, 85, 101,66],
-  
-}, {
-  name: 'ديزل',
-  data: [35, 41, 36, 26],
-
-}],
-  chart: {
-  type: 'bar',
-  height:400,
-  parentHeightOffset: 0,
-  stackType: '100%',
-  width: "100%",
-},
-plotOptions: {
-  bar: {
-    horizontal: false,
-    barHeight: '100%',
-    columnWidth: '55%',
-    endingShape: 'rounded',
-    colors:{
-      backgroundBarColors: ['#F2F4F6', '#F2F4F6', '#F2F4F6', '#F2F4F6'],
-
-    } 
-  }
-  },
-dataLabels: {
-  enabled: true,
-  
-},
-
-stroke: {
-  show: true,
-  width: 2,
-  colors: ['transparent']
-},
-
-colors: [ '#28c76f','#EA5455', '#FFEB3B'],
-xaxis: {
-  categories: ['شركة الامل', 'شركة المستقبل', 'الاهرام', 'النور'],
-},
-yaxis: {
-  title: {
-    text: '$ (thousands)',
-    
-  }
-  
-},
-fill: {
-  opacity: 8,
-  
-},
-tooltip: {
-  y: {
-    formatter: function (val) {
-      return "$ " + val + " thousands"
-    }
-    
-  }
-}
-};
+////
 
 var chartes = new ApexCharts(document.querySelector("#chartes"), options);
 chartes.render();
