@@ -885,6 +885,117 @@ barChartr.render();
     const horizontalBarCharts = new ApexCharts(horizontalBarChartEls, horizontalBarChartConfigs);
     horizontalBarCharts.render();
   }
+  // Horizontal Bar Chart3
+  // --------------------------------------------------------------------
+  const horizontalBarChartEl3 = document.querySelector('#horizontalBarChart3'),
+    horizontalBarChartConfig3 = {
+      chart: {
+        height: 400,
+        type: 'bar',
+        stacked: true,
+        parentHeightOffset: 0,
+        toolbar: {
+          show: false
+        }
+      },
+      
+        stroke: {
+          width: 1,
+          colors: ['#fff']
+        },
+      plotOptions: {
+        bar: {
+          horizontal: true,
+          barHeight: '30%',
+          startingShape: 'rounded',
+          borderRadius: 8,
+        },
+        colors: {
+          backgroundBarColors: [
+            chartColors.column.bg,
+            chartColors.column.bg,
+            chartColors.column.bg,
+            chartColors.column.bg,
+            chartColors.column.bg
+          ],
+          backgroundBarRadius: 10
+        }
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: true
+          }
+        },
+        padding: {
+          top: -20,
+          bottom: -12
+        }
+      },
+      
+      // colors: config.colors.info,
+      dataLabels: {
+        enabled: true,
+        position: 'top',
+        offsetX: -6,
+
+
+      },
+      legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'start',
+        labels: {
+          colors: legendColor,
+          useSeriesColors: true
+        }
+      },colors: ["#EA5455", "#28c76f","#FFEB3B"],
+      series: [{
+        name: '95',
+
+        data: [44, 55, 41, 64, 22, 43, 21]
+      }, {
+        name: ' 90',
+
+        data: [53, 32, 33, 52, 13, 44, 32]
+      }, {
+        name: 'ديزل',
+
+        data: [20, 32, 33, 22, 10, 22, 10]
+      }],
+         
+
+      xaxis: {
+        categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+        axisBorder: {
+          show: false
+        },
+        
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+          
+        }
+      },
+      yaxis: {
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      }
+    };
+  if (typeof horizontalBarChartEl3 !== undefined && horizontalBarChartEl3 !== null) {
+    const horizontalBarChart3 = new ApexCharts(horizontalBarChartEl3, horizontalBarChartConfig3);
+    horizontalBarChart3.render();
+  }
   // Candlestick Chart
   // --------------------------------------------------------------------
   const candlestickEl = document.querySelector('#candleStickChart'),

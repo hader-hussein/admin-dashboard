@@ -392,3 +392,11 @@ select:focus>option:checked
   background-color:rgb(var(--theme-color))!important;
   /* selected */
 }
+.table-light {
+  --bs-table-bg: rgb(var(--theme-color))!important;
+color: #dbdade !important;
+
+}
+.table:not(.table-dark) thead:not(.table-dark) th {
+  color: #fff !important;
+}
