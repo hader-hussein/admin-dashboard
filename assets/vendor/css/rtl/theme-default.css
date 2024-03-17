@@ -69,13 +69,14 @@
   --bs-highlight-bg: #ffecd9;
 }
 :root {
- 
   --blue: 115, 103, 240;
   --grey: 168, 170, 174;
   --green: 40, 199, 111;
   --Brown: 0, 207, 232;
   --orange: 255, 159, 67;
   --red:234, 84, 85;
+  
+  
   --theme-color: var(--blue);
 }
 

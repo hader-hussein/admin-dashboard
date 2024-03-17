@@ -18,6 +18,7 @@ const updateRoot = value => root.style.setProperty("--theme-color", `var(--${val
 
 for(const input of inputs) {
   if(theme && input.value === theme) {
+   
     input.checked = true;
     
     updateRoot(theme);
@@ -25,7 +26,8 @@ for(const input of inputs) {
   
   input.onchange = e => {
     updateRoot(e.target.value);
-    
+    e.preventDefault()
+
     localStorage.setItem("theme-color", e.target.value);
   }
 }/*** */
@@ -33,8 +35,8 @@ for(const input of inputs) {
 
 ////
 
-var chartes = new ApexCharts(document.querySelector("#chartes"), options);
-chartes.render();
+// var chartes = new ApexCharts(document.querySelector("#chartes"), options);
+// chartes.render();
 
   /** chart*/
   google.charts.load('current', {'packages':['corechart']});

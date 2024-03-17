@@ -14,7 +14,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>change-questions</title>
+    <title>Evaluations questions</title>
 
     <meta name="description" content="" />
 
@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
 
     <link rel="stylesheet" href="./assets/css/demo.css" />
+    <link href="./assets/font-awesome/css/all.css" rel="stylesheet">
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/vendor/libs/node-waves/node-waves.css" />
@@ -251,7 +252,7 @@
                     data-bs-auto-close="outside"
                     aria-expanded="false">
                     <i class="ti ti-bell ti-md"></i>
-                    <span class="badge bg-danger rounded-pill badge-notifications text-bg-danger">5</span>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end py-0">
                     <li class="dropdown-menu-header border-bottom">
@@ -587,7 +588,7 @@
                 <div class="container-xxl d-flex h-100">
                   <ul class="menu-inner">
                     <!-- Dashboards -->
-                    <li class="menu-item">
+                    <li class="menu-item ">
                       <a href="index.html" class="menu-link ">
                         <i class="menu-icon tf-icons ti ti-smart-home"></i>
                         <div data-i18n="Dashboards">Dashboards</div>
@@ -603,11 +604,23 @@
                       </a>
 
                       <ul class="menu-sub">
-                        <li class="menu-item ">
-                          <a href="addstation.html" class="menu-link">
+                        <li class="menu-item">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-menu-2"></i>
-                            <div data-i18n="Add a station">اضافة محطة</div>
+                            <div data-i18n="station"> محطة</div>
                           </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item">
+                              <a href="addstation.html" class="menu-link">
+                                <div data-i18n="Add a station">اضافة محطة</div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="all-station.html" class="menu-link">
+                                <div data-i18n="view station">مشاهدة محطة</div>
+                              </a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="menu-item">
                           <a href="Import-invoices.html" class="menu-link" target="_blank">
@@ -621,29 +634,53 @@
                             <div data-i18n="Products prices">اسعار المنتجات</div>
                           </a>
                         </li>
-                        <li class="menu-item ">
-                          <a href="employees.html" class="menu-link">
+                        <li class="menu-item">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                             <div data-i18n="employees">الموظفين </div>
                           </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item">
+                              <a href="employees.html" class="menu-link">
+                                <div data-i18n="add employees">الموظفين </div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="all-employes.html" class="menu-link">
+                                <div data-i18n="view employees">مشاهدةالموظفين </div>
+                              </a>
+                            </li>
+                          </ul>
                         </li>
-                        <li class="menu-item ">
+                        <li class="menu-item">
                           <a href="Always.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-square"></i>
                             <div data-i18n="Always">الدوام </div>
                           </a>
                         </li>
-                        <li class="menu-item ">
+                        <li class="menu-item">
                           <a href="Services.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-square"></i>
                             <div data-i18n="Services">الخدمات  </div>
                           </a>
                         </li>
                         <li class="menu-item">
-                          <a href="add-items.html" class="menu-link">
+                          <a href="javascript:void(0)" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
                             <div data-i18n="Items">الاصناف </div>
                           </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item">
+                              <a href="add-items.html" class="menu-link">
+                                <div data-i18n="add Items">اضافه صنف </div>
+                              </a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="all-Items.html" class="menu-link">
+                                <div data-i18n="view Items">مشاهدة صنف </div>
+                              </a>
+                            </li>
+                          </ul>
                         </li>
                         
                       </ul>
@@ -680,113 +717,163 @@
                         </li>
                       </ul>
                     </li>
-
                     <!-- Ratings -->
-                    <li class="menu-item active">
+                    <li class="menu-item active" >
                       <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons ti ti-box-multiple"></i>
                         <div data-i18n="Ratings">التقيمات </div>
                       </a>
                       <ul class="menu-sub">
                         <li class="menu-item active">
-                          <a href="Evaluations-questions.html" target="_blank" class="menu-link">
+                          <a href="javascript:void(0)"  class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-lifebuoy"></i>
                             <div data-i18n="Evaluations questions">اسئلة التقييمات</div>
                           </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item ">
+                              <a href="question.html" target="_blank" class="menu-link">
+                                <div data-i18n="questions">اسئلة </div>
+                              </a>
+                              </li>
+                              <li class="menu-item active">
+                                <a href="Logo.html"  class="menu-link">
+                                  <div data-i18n="logo"> اضافه لوجو</div>
+                                </a>
+                                </li>
+                                <li class="menu-item">
+                                  <a href="name-multiple-selection.html" target="_blank" class="menu-link">
+                                    <div data-i18n="Evaluations questions"> اضافه اختبار</div>
+                                  </a>
+                                  </li>
+                          </ul>
                         </li>
                         <li class="menu-item">
                           <a
-                            href="reviews.html"
-                            target="_blank"
-                            class="menu-link">
+                            href="javascript:void(0)"
+                           
+                            class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons ti ti-file-description"></i>
-                            <div data-i18n="Create an evaluation">انشاء تقييم</div>
+                            <div data-i18n="Create an evaluation"> تقييم</div>
                           </a>
+                          <ul class="menu-sub">
+                            <li class="menu-item">
+                              <a
+                                href="reviews.html"
+                                target="_blank"
+                                class="menu-link">
+                                <div data-i18n="Create an evaluation">انشاء تقييم</div>
+                              </a>
+                              </li>
+                            <li class="menu-item">
+                              <a
+                                href="all-reviews.html"
+                                target="_blank"
+                                class="menu-link">
+                                <div data-i18n="All reviews"> كل التقييمات</div>
+                              </a>
+                            </li>
+                          </ul>
                         </li>
-                        <li class="menu-item">
-                          <a
-                            href="all-reviews.html"
-                            target="_blank"
-                            class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-arrows-maximize"></i>
-                            <div data-i18n="All reviews"> كل التقييمات</div>
-                          </a>
-                        </li>
+                       
                       </ul>
                     </li>
                        <!-- Subscriptions -->
-                  <li class="menu-item">
-                    <a href="javascript:void(0)" class="menu-link menu-toggle">
-                      <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
-                      <div data-i18n="Subscriptions">الاشتركات</div>
-                    </a>
-                    <ul class="menu-sub">
-                      
-                      <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                          <i class="menu-icon tf-icons ti ti-users-group"></i>
-                          <div data-i18n="Administration">الادراة</div>
+                       <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                          <i class="menu-icon tf-icons ti ti-layout-grid-add"></i>
+                          <div data-i18n="Subscriptions">الاشتركات</div>
                         </a>
                         <ul class="menu-sub">
+                          
                           <li class="menu-item">
-                            <a href="Administration-Dashboard.html" class="menu-link">
-                              <div data-i18n="Dashboard">Dashboard</div>
+                            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                              <i class="menu-icon tf-icons ti ti-users-group"></i>
+                              <div data-i18n="Administration">الادراة</div>
                             </a>
+                            <ul class="menu-sub">
+                              <li class="menu-item">
+                                <a href="Administration-Dashboard.html" class="menu-link">
+                                  <div data-i18n="Dashboard">Dashboard</div>
+                                </a>
+                              </li>
+                             
+                              <li class="menu-item">
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                  <div data-i18n=" data"> بيانات</div>
+                                </a>
+                                <ul class="menu-sub">
+                                  <li class="menu-item">
+                                    <a href="add-Administration.html" class="menu-link">
+                                      <div data-i18n="Add data">اضافه بيانات</div>
+                                    </a>
+                                  </li>
+                                  <li class="menu-item">
+                                    <a href="all-Subscriptions.html" class="menu-link">
+                                      <div data-i18n="view data"> مشاهدة البيانات</div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="menu-item">
+                                <a href="add-Reports-Subscriptions.html" class="menu-link">
+                                  <div data-i18n="Reports">التقارير</div>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="add-Portfolio-Subscriptions.html" class="menu-link">
+                                  <div data-i18n="Portfolio">المحفظة</div>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
-                         
                           <li class="menu-item">
-                            <a href="add-Administration.html" class="menu-link">
-                              <div data-i18n="Add data">اضافه بيانات</div>
+                            <a href="javascript:void(0);" class="menu-link menu-toggle ">
+                              <i class="menu-icon tf-icons ti ti-book"></i>
+                              <div data-i18n="Customers">العملاء</div>
                             </a>
+                            <ul class="menu-sub">
+                              <li class="menu-item">
+                                <a href="Customers-Dashboard.html" class="menu-link">
+                                  <div data-i18n="Dashboard">Dashboard</div>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                  <div data-i18n="add-customer"> عملاء</div>
+                                </a>
+                                <ul class="menu-sub">
+                                  <li class="menu-item">
+                                    <a href="add-Customers.html" class="menu-link">
+                                      <div data-i18n="add-customer">اضافه عملاء</div>
+                                    </a>
+                                    </li>
+                                    <li class="menu-item">
+                                      <a href="all-customers.html" class="menu-link">
+                                        <div data-i18n="view-customer">مشاهدة عملاء</div>
+                                      </a>
+                                      </li>
+                                </ul>
+                              </li>
+                              <li class="menu-item">
+                                <a href="add-Reports-customer.html" class="menu-link">
+                                  <div data-i18n="Reports">التقارير</div>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="add-invoice-customer.html" class="menu-link">
+                                  <div data-i18n="invoice">الفاتورة</div>
+                                </a>
+                              </li>
+                              <li class="menu-item">
+                                <a href="add-Portfolio-customer.html" class="menu-link">
+                                  <div data-i18n="Portfolio">المحفظة</div>
+                                </a>
+                              </li>
+                            </ul>
                           </li>
-                          <li class="menu-item">
-                            <a href="add-Reports-Subscriptions.html" class="menu-link">
-                              <div data-i18n="Reports">التقارير</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="add-Portfolio-Subscriptions.html" class="menu-link">
-                              <div data-i18n="Portfolio">المحفظة</div>
-                            </a>
-                          </li>
+    
                         </ul>
                       </li>
-                      <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                          <i class="menu-icon tf-icons ti ti-book"></i>
-                          <div data-i18n="Customers">العملاء</div>
-                        </a>
-                        <ul class="menu-sub">
-                          <li class="menu-item">
-                            <a href="Customers-Dashboard.html" class="menu-link">
-                              <div data-i18n="Dashboard">Dashboard</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="add-Customers.html" class="menu-link">
-                              <div data-i18n="add-customer">اضافه عملاء</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="add-Reports-customer.html" class="menu-link">
-                              <div data-i18n="Reports">التقارير</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="add-invoice-customer.html" class="menu-link">
-                              <div data-i18n="invoice">الفاتورة</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="add-Portfolio-customer.html" class="menu-link">
-                              <div data-i18n="Portfolio">المحفظة</div>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </li>
                   </ul>
                 </div>
               </aside>
@@ -794,49 +881,130 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
                <!-- Basic Layout -->
-               <div class="row">
+             
+             
+                <!--logo-->
                 <div class="col-xl">
-                  <div class="card  mb-4">
+                  <div class="card mb-4">
                     <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">تعديل سوال</span> </strong>
-                    
-                      <form class="row form-repeater mt-4">
-                        <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
-                          <label class="form-label" for="form-repeater-1-1">   السوال<span class="start-form">*</span></label>
-                          <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" السوال " />
-                        </div>
-                          <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
-                            <label class="form-label" for="form-repeater-1-4">النوع<span class="start-form">*</span></label>
-                                <select id="form-repeater-1-4" class="form-select select2">
-                                  <option value="Designer"> نعم اولا</option>
-                                  <option value="Developer">اقتراح لى تحسن الخدمة</option>
-                                  <option value="Tester">اختيار من متعدد</option>
-                                  <option value="Manager">تقييم بالنجوم</option>
-                                  <option value="amoctioon">تقييم بالايموشن</option>
-                                  <option value="send"> رسالة شكر</option>
-
-                                </select>
+                      <div class="row justify-content-between ">
+                         <strong class="col-xl-2 col-lg-4 col-md-4 mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">اضافه لوجو</span>  </strong>
+                      
+                           <div class="col-xl-4 col-lg-6 col-md-6">
+                          <div class="card h-100 card-border-shadow-gray">
+                            <div class="row h-100 align-items-center justify-content-center">
+                              <div class="col-sm-5 col-5">
+                                <div class="d-flex align-items-end h-100  justify-content-center mt-sm-0 mt-3">
+                                  <img src="./assets/img/illustrations/logo.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="100">
+      
+                                </div>
+                              </div>
+                              <div class="col-sm-7 col-7">
+                                  <button class="btn btn-primary waves-effect waves-light" data-bs-target="#addlogo" data-bs-toggle="modal">اضافه لوجو</button>
+                                  <p class="mb-0 mt-2">Add logo, if it does not exist</p>
+                               
+                              </div>
+                            </div>
                           </div>
-                       
-                          
-                    <div class="col col-lg-8">
-                      <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                      <a href="Evaluations-questions.html" class="btn btn-label-secondary waves-effect mx-3"> الرجوع</a>
-                     </div>
-                 
-                 </form>
-                     
+                          </div>
+                      </div>
+                      <div class="table-responsive text-nowrap rounded mt-4">
+                        <table class="table table-bordered table-hover rounded">
+                          <thead class="table-light">
+                            <tr class="fw-bold">
+                              <th class="fw-bold">التسلسل</th>
+                              <th class="fw-bold"> اللوجو</th>
+                            
+                              <th class="fw-bold"> تعديل</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-border-bottom-0">
+                            <tr>
+                              <td>
+                               1
+                              </td>
+                              <td>   
+                                <img class="img-tabel" src ="assets/img/illustrations/add-new-roles.png" alt="">
+
+                              
+                              </td>
+                        
+                              
+        
+                              <td>
+                                <div class="d-flex">
+                                  <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded cursor-pointer" data-bs-target="#editRoleModal" data-bs-toggle="modal" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
+                                  <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
+                                
+                                </div>
+                               
+                              </td>
+                            </tr>
+                        
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                      
+          
                     </div>
                   </div>
                 </div>
+
+                
+            </div>
+          
+            <!--/ Content -->
+         
+            <!--/ Add questions Modal -->
+            <!-- Add logo Modal -->
+            <div class="modal fade" id="addlogo" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+                <div class="modal-content p-1 p-md-3">
+                  <button
+                    type="button"
+                    class="btn-close btn-pinned"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="modal-body">
+                    <div class="text-center mb-4">
+                      <h3 class="role-title mb-2"> اضافه لوجو</h3>
+                    </div>
+                    <!-- Add quetions form -->
+                    <form class="row form-repeater mt-4 justify-content-center">
+                            <div class="mb-3 col-lg-8 col-xl-12 col-11 mb-0">
+                              <label class="form-label" for="form-repeater-1">   اللوجو<span class="start-form">*</span></label>
+                              <input type="file" id="form-repeater-1" class="form-control" />
+                            </div>
+                          
+                           
+                              
+                        <div class="col-11 col-lg-8 col-xl-12">
+                          <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                          <a href="" class="btn btn-label-secondary waves-effect mx-3"> الرجوع</a>
+                         </div>
+                     
+                     </form>
+                    <!--/ Add quetions form -->
+                  </div>
+                </div>
               </div>
-            
-              <!--logo-->
-              <div class="row">
-                <div class="col-xl">
-                  <div class="card  mb-4">
-                    <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">تعديل الوجو</span> </strong>
+            </div>
+            <!--/ Add logo Modal -->
+              <!-- edit logo Modal -->
+              <div class="modal fade" id="editRoleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered modal-add-new-role">
+                  <div class="modal-content p-1 p-md-3">
+                    <button
+                      type="button"
+                      class="btn-close btn-pinned"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                    <div class="modal-body">
+                      <div class="text-center mb-4">
+                        <h3 class="role-title mb-2">  تعديل الوجو</h3>
+                      </div>
+                      <!---->
                       <form class="row form-repeater mt-4">
                         <div class="mb-3 col-lg-6 col-xl-12 col-12 mb-0">
                           <label class="form-label" for="form-repeater-1">   اللوجو<span class="start-form">*</span></label>
@@ -847,58 +1015,17 @@
                           
                     <div class="col col-lg-8">
                       <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                      <a href="Evaluations-questions.html" class="btn btn-label-secondary waves-effect mx-3"> الرجوع</a>
                     </div>
                 
                 </form>
-                      
-                    
+                     
+                   
                     </div>
                   </div>
                 </div>
-            
               </div>
-              <!--list-->
-              <div class="row">
-                <div class="col-xl">
-                  <div class="card  mb-4">
-                    <div class="card-body p-4">
-                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">تعديل اختبار</span> </strong>
-                      <form class="row form-repeater mt-4">
-                        <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
-                          <label class="form-label" for="form-repeater-LIST">   اسم الاختبار<span class="start-form">*</span></label>
-                          <input type="text" id="form-repeater-LIST" class="form-control" />
-                        </div>
-                        <div class="mb-3 col-lg-6 col-xl-6 col-12 mb-0">
-                          <label class="form-label" for="select2Multiple"> السوال التابع له<span class="start-form">*</span></label>
-                          <select id="select2Multiple" class="form-select select2" multiple>
-                            <optgroup label="Pacific Time Zone">
-                              <option value="CA">السوال الاول</option>
-                              <option value="NV">السوال الثانى</option>
-                              <option value="OR">السوال الثالث</option>
-                              <option value="WA">السوال الرابع</option>
-                            </optgroup>
-                          </select>
-                        </div>
-                       
-                          
-                    <div class="col col-lg-8">
-                      <button type="submit" class="btn btn-primary  waves-effect waves-light">تعديل</button>
-                      <a href="Evaluations-questions.html" class="btn btn-label-secondary waves-effect mx-3"> الرجوع</a>
-                     </div>
-                 
-                 </form>
-                      
-                    
-                    </div>
-                  </div>
-                </div>
-            
-              </div>
-            </div>
-          
-            <!--/ Content -->
-
+                 <!---->
+            <!--/ Add list Modal -->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">

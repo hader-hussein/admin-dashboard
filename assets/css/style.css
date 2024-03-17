@@ -400,3 +400,10 @@ color: #dbdade !important;
 .table:not(.table-dark) thead:not(.table-dark) th {
   color: #fff !important;
 }
+.input-groupe {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
