@@ -188,9 +188,9 @@
           }
         }
       },
-      // dataLabels: {
-      //   enabled: false
-      // },
+      dataLabels: {
+        enabled: true
+      },
       legend: {
         show: true,
         position: 'top',
