@@ -1,0 +1,259 @@
+* {
+     box-sizing: border-box;
+     font-family: 'Arial', sans-serif;
+ }
+ 
+ body {
+     margin: 0;
+     padding: 5px;
+    
+     /* دعم الكتابة من اليمين لليسار */
+ }
+
+ .table-container {
+     width: 100%;
+     overflow-x: auto;
+ }
+ 
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 10px 0;
+     font-size: 14px;
+ }
+ 
+ th, td {
+     padding: 8px;
+     border: 1px solid #ccc;
+     text-align: center;
+     font-weight: 800;
+ }
+ 
+ thead th {
+    background-color: rgb(168 170 174 / 31%);
+     font-weight: bold;
+ }
+ 
+ td[colspan] {
+     text-align: center;
+ }
+ .d-flex{
+     display: flex;
+     justify-content: space-between;
+ }
+.dete{
+     text-align: right;
+}
+.text-right{
+    text-align: right;
+    padding: 2px;
+    margin: 1px;
+    font-size: 20px;
+}
+ /* تنسيقات خاصة بالطباعة */
+ @media print {
+     @page {
+         size: portrait; /* جعل الصفحة بطولها */
+         margin: 10px; /* هوامش صغيرة */
+     }
+ 
+     body {
+         margin: 10px;
+         padding: 0;
+         height: 100vh; /* استخدام الارتفاع الكامل للصفحة */
+      
+     }
+ 
+   
+     table {
+         /* width: auto;  */
+         font-size: 12px; /* تقليل حجم النص للطباعة */
+         width: 100%;
+     }
+ 
+     th, td,caption {
+         padding: 2px;
+         border: 1px solid #ccc; /* حدود واضحة للطباعة */
+     }
+ 
+   
+     
+ 
+     td[colspan]
+{
+     text-align: center;
+}
+     
+ }
+ .text-h1{
+    margin: 4px 0px;
+    font-size: 25px;
+ }
+ /*from*/
+.form-label {
+    margin-bottom: 0.25rem;
+    font-size: 0.8125rem;
+    color: #5d596c;
+    font-weight: 400;
+}
+.form-control {
+    box-shadow: 0px 2px 6px #dbdade inset;
+}
+.form-control,.row-item-pump {
+    display: block;
+    width: 100%;
+    padding: 0.422rem 0.875rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6f6b7d;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dbdade;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.row-item-pump{
+  
+    text-align: center;
+    font-weight: 500;
+}
+.start-form{
+    color: red;
+}
+
+.row-item-hadeer{
+    display: grid;
+    grid-template-columns: 0.50fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 10px;
+
+}
+.row-item-fieldset-buttom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+.row-item{
+    margin-bottom: 4px;
+    grid-template-columns: 0.75fr repeat(9, 1fr) ;
+    display: grid;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.row-footer-fieldset{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+/*  */
+.text-center{
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+  
+    padding: 10px 40px;
+    border: 0px;
+   
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7367f0;
+    border-color: #7367f0;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.form-fieldset,.form-fieldset-top{
+    margin: 10px 0px;
+    border-style: dashed;
+    border-width: 1px;
+
+}
+.d-total{
+    border-style: dashed;
+    border-width: 1px;  
+    border-color:rgb(192, 192, 192);
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.d-Revenue {
+    padding: 4px 0px;
+
+}
+.d-Revenue hr{
+    width: 40%;
+}
+
+
+@media (max-width:600px) {
+    .row-item-hadeer{
+        grid-template-columns: 1fr;
+    }
+  
+    .row-item-fieldset-buttom{
+        overflow-x: auto;
+        grid-template-columns: 95% 95% 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .row-item-fieldset-list {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .form-fieldset-top .row-item .form-control{
+        width: 120px;
+    }
+}
+ /*from*/
+ legend {
+    float: unset;
+    width: unset;
+    padding:unset ;
+   margin-bottom: 0.5rem;
+   font-size: calc(1.275rem + 0.3vw);
+    line-height: inherit;
+}
+.form-fieldset{
+   border-color: rgb(192, 192, 192);
+   padding: 6px;
+
+}
+.form-fieldset-top legend {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.legend-title {
+            font-weight: bold;
+            padding: 5px;
+            border: 1px dashed rgb(192, 192, 192); /* حدود على الـ span */
+}
+.red-th{
+    background-color: rgb(234, 84, 85);
+}
+.gren-th{
+background-color: rgb(40, 199, 111);
+}
+.orang-th{
+    background-color: rgb(255, 159, 67);
+}
+.tr-footer{
+    background-color: rgba(0, 209, 232, 0.159);
+}
+.bg-white{
+    background-color: #fff;
+}
+
+

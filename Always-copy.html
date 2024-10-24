@@ -47,13 +47,10 @@
     <link rel="stylesheet" href="./assets/vendor/libs/select2/select2.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
 
-    <link rel="stylesheet" href="./assets/vendor/libs/bs-stepper/bs-stepper.css" /> <!--24-10-2024-->
-
+   
    
     <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/styles-stastion.css" />
-
     <!-- Helpers -->
     <script src="./assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -882,362 +879,157 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y">
                <!-- Basic Layout -->
-               <form class="form-content  mx-0">
-                <div class="bs-stepper wizard-numbered mt-2"><!--24-10-2024-->
-                  <div class="bs-stepper-header"><!--24-10-2024-->
-                    <div class="step" data-target="#account-details"><!--24-10-2024-->
-                      <button type="button" class="step-trigger">
-                        <span class="bs-stepper-circle">1</span>
-                        <span class="bs-stepper-label">
-                          <span class="bs-stepper-title"> بيانات المحطات</span>
-                          <span class="bs-stepper-subtitle">Setup station Details</span>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="line">
-                      <i class="ti ti-chevron-right"></i>
-                    </div>
-                    <div class="step" data-target="#personal-info">
-                      <button type="button" class="step-trigger">
-                        <span class="bs-stepper-circle">2</span>
-                        <span class="bs-stepper-label">
-                          <span class="bs-stepper-title"> بيانات الايرادات</span>
-                          <span class="bs-stepper-subtitle">Add Sessions details </span>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                  <!-- Tab Navigation -->
-  
-                      <div class="bs-stepper-content"><!--24-10-2024-->
-                           <div id="account-details" class="content"><!--24-10-2024-->
-                                <div class="row-item-hadeer">
-                                     <div class="mb-3">
-                                          <label for="exampleFormControlInput1" class="form-label">اسم المحطة <span
-                                                    class="start-form">*</span></label>
-                                          <select class="form-control select2">
-                                               <option>1</option>
-                                               <option>1</option>
-                                               <option>1</option>
-                                          </select>
-                                     </div>
-                                     <div class="mb-3">
-                                          <label for="example-dete" class="form-label"> تاريخ <span class="start-form">*</span></label>
-                                          <input type="date" class="form-control" id="example-dete">
-                                     </div>
-                                     <div class="mb-3">
-                                          <label for="example-dete" class="form-label"> من وقت <span class="start-form">*</span></label>
-                                          <input type="time" class="form-control" id="example-dete">
-                                     </div>
-                                     <div class="mb-3">
-                                          <label for="example-dete" class="form-label"> الى وقت <span class="start-form">*</span></label>
-                                          <input type="time" class="form-control" id="example-dete">
-                                     </div>
+             
+                <div class="col-xl">
+                  <div class="card mb-4">
+                    <div class="card-body p-4">
+                      <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">الدوام</span>  </strong>
+                      <div class="row  mt-5 justify-content-center">
+                        <div class="col-xl-6 col-lg-10 col-md-10">
+                          <div class="card h-100 card-border-shadow-gray">
+                            <div class="row h-100 align-items-center">
+                              <div class="col-sm-5 col-5">
+                                <div class="d-flex align-items-end h-100 justify-content-start mt-sm-0 mt-3">
+                                  <img src="./assets/img/illustrations/pencil-rocket.png" class="img-fluid mt-sm-4 mt-md-0" alt="add-new-roles" width="200">
+      
                                 </div>
-                                <div class="row-item-fieldset-list">
-  
-                     
-                                     <fieldset class="form-fieldset-top">
-                                           <legend>
-                                               <span class="legend-title">pump</span>
-                 
-                                               <span class="legend-title"> ديزل -D</span>
-                                               <span class="legend-title"> بنزين91 - Petrol 91</span>
-                                               <span class="legend-title"> بنزين 95 - petrol 95</span>
-                                           </legend>
-                                       
-                                        
-                                          <div class="row-item">
-                                               <div class="row-item-pump">
-                                                    12
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-close"
-                                                         placeholder=" اقفال-close   ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-close"
-                                                         placeholder=" اقفال-close   ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-close"
-                                                         placeholder=" اقفال-close   ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-open" placeholder="افتتاحى - open ">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <input type="text" class="form-control" id="form-sales" placeholder="المبيعات-sales">
-                                               </div>
-                                          </div>
-                                          <div class="footer-fieldset">
-                                               <div class="row-footer-fieldset">
-                                                    <div class="mb-3"></div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-totel">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-totel">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-totel" class="form-label"> الاجمالى <span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-totel">
-                                                    </div>
-                                               </div>
-                                               <div class="row-footer-fieldset">
-                                                    <div class="mb-3"></div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-deceint" >
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-deceint" >
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-deceint" class="form-label"> يخصم لترات الفحص	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-deceint" >
-                                                    </div>
-                                               </div>
-                                               <div class="row-footer-fieldset">
-                                                    <div class="mb-3"></div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label"> سعر اللتر	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                               </div>
-                                               <div class="row-footer-fieldset">
-                                                    <div class="mb-3"></div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات ديزل	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات 91	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                                    <div class="mb-3">
-                                                         <label for="exampleForm-prices" class="form-label">  اجمالى مبيعات 95	<span class="start-form">*</span></label>
-                                                         <input type="text" class="form-control" id="exampleForm-prices">
-                                                    </div>
-                                               </div>
-                                          </div>
-                                          <div class="d-flex d-total">
-                                               الاجمالى العام 91+95+ديزل	
-                                               <span>12000</span>			
-                           
-                                          </div>
-                                     </fieldset>
-                                     
-                                </div>
-                                <div class="col-12 d-flex justify-content-between">
-                                  <button class="btn btn-label-secondary btn-prev" disabled>
-                                    <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                                    <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                                  </button>
-                                  <button class="btn btn-primary btn-next" type="button">
-                                    <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                                    <i class="ti ti-arrow-right"></i>
-                                  </button>
-                                </div>
-                           </div>
-                           
-                           <div id="personal-info" class="content"><!--24-10-2024-->
-                                <div class="row-item-fieldset-buttom">
-                                     <fieldset class="form-fieldset">
-                                          <legend>ديزل -D</legend>
-                                         
-                                          <div class="footer-fieldset">
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-totel" class="form-label"> المخزون السابق <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-totel">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-deceint" class="form-label"> المستلم<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-deceint" >
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  الاجمالى	<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  المباع لترات
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label"> الرصيد لترات
-                 
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                 
-                                          </div>
-                                          <div class="d-flex d-Revenue">
-                                               <hr>
-                                               الايرادات
-                                               <hr>
-                                          </div>
-                 
-                                          <div class="mb-3">
-                                               <label for="exampleForm-prices" class="form-label">  ايراد ديزل الكاش	
-                 
-                 
-                                                    <span class="start-form">*</span></label>
-                                               <input type="text" class="form-control" id="exampleForm-prices">
-                                          </div>
-                                          <div class="mb-3">
-                                               <label for="exampleForm-prices" class="form-label">  ايراد شبكة   ديزل	
-                                                    <span class="start-form">*</span></label>
-                                               <input type="text" class="form-control" id="exampleForm-prices">
-                                          </div>
-                                     </fieldset>
-                                     <fieldset class="form-fieldset">
-                                          <legend> بنزين91 - Petrol 91</legend>
-                                         
-                                          <div class="footer-fieldset">
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-totel" class="form-label"> المخزون السابق <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-totel">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-deceint" class="form-label"> المستلم<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-deceint" >
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  الاجمالى	<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  المباع لترات
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label"> الرصيد لترات
-                 
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="d-flex d-Revenue">
-                                                    <hr>
-                                                    الايرادات
-                                                    <hr>
-                                               </div>
-                 
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  ايراد 91 الكاش	
-                 
-                 
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  ايراد شبكة   91	
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                          </div>
-                                     </fieldset>
-                                     <fieldset class="form-fieldset">
-                                          <legend>بنزين 95 - petrol 95</legend>
-                                     
-                                          <div class="footer-fieldset">
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-totel" class="form-label"> المخزون السابق <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-totel">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-deceint" class="form-label"> المستلم<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-deceint" >
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  الاجمالى	<span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  المباع لترات
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label"> الرصيد لترات
-                 
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="d-flex text-center d-Revenue">
-                                                    <hr>
-                                                    الايرادات
-                                                    <hr>
-                                               </div>
-                 
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  ايراد 95 الكاش	
-                 
-                 
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                               <div class="mb-3">
-                                                    <label for="exampleForm-prices" class="form-label">  ايراد شبكة   95	
-                                                         <span class="start-form">*</span></label>
-                                                    <input type="text" class="form-control" id="exampleForm-prices">
-                                               </div>
-                                          </div>
-                                        
-                                     </fieldset>
-                                     
-                                </div>
-                                <div class="d-flex d-total">
-                                    المصروفات
-                                     <span>0</span>			
-                 
-                                </div>
+                              </div>
+                              <div class="col-sm-7 col-7">
+                                  <button class="btn btn-primary waves-effect waves-light" data-bs-target="#addRoleModal" data-bs-toggle="modal">اضافه الدوام</button>
+                                  <p class="mb-0 mt-2">Add always, if it does not exist</p>
                                
-                            <div class="col-12 d-flex justify-content-between">
-                                
-                              <button class="btn btn-label-secondary btn-prev" type="button">
-                                <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                                <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                              </button>
-                              <div>
-                                <button class="btn btn-primary btn-submit" type="submit">حفظ</button>
                               </div>
                             </div>
-                          
-                           </div>
-                         
+                          </div>
+                          </div>
                       </div>
+                      
+                      
+          
+                    </div>
+                  </div>
                 </div>
-          </form>
+                 <!--table-->
+                 <div class="card mt-5">
+                  <div class="card-body p-4">
+                    <strong class=" mb-3  text-title-hadeer text-tilte-b"><span class="text-muted fw-medium">انهاء الدوام</span>  </strong>
+
+                    <div class="table-responsive text-nowrap rounded mt-4">
+                      <table class="table table-bordered table-hover rounded">
+                        <thead class="table-light">
+                          <tr class="fw-bold">
+                            <th class="fw-bold">التسلسل</th>
+                            <th class="fw-bold">اسم الدوام</th>
+                            <th class="fw-bold">التاريخ</th>
+                            <th class="fw-bold">انهاء الدوام</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-border-bottom-0">
+                          <tr>
+                            <td>
+                             1
+                            </td>
+                            <td> cc</td>
+                      
+                            <td>   10/10/2023</td>
+      
+                            <td class="d-flex">
+                              <a class="bg-success text-bg-success p-1 d-flex align-items-center justify-content-center me-3 rounded" href="" title="تعديل"><i class="ti ti-pencil  fs-4"></i> </a>
+                              <a class="bg-danger text-bg-danger p-1 d-flex align-items-center justify-content-center me-3 rounded" href="javascript:void(0);" title="حذف"><i class="ti ti-trash  fs-4"></i> </a>
+                            
+                            </td>
+                          </tr>
+                      
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                 
+                 </div>
+                <!---->
             
             </div>
           
             <!--/ Content -->
-            
+            <!-- Add products Modal -->
+            <div class="modal fade" id="addRoleModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered modal-add-new-role">
+                <div class="modal-content p-1 p-md-3">
+                  <button
+                    type="button"
+                    class="btn-close btn-pinned"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                  <div class="modal-body">
+                    <div class="text-center mb-4">
+                      <h3 class="role-title mb-2"> اضافه الدوام</h3>
+                    </div>
+                    <!-- Add employees form -->
+                    <form class="form-repeater mt-4">
+                      <div data-repeater-list="group-a">
+                          <div data-repeater-item class="col-lg-12">
+                            <div class="row">
+      
+                              <div class="mb-3 col-lg-6 col-xl-4 col-12 mb-0">
+                                <label class="form-label" for="form-repeater-1-4">اسم المحطة<span class="start-form">*</span></label>
+                                <select id="form-repeater-1-4" class="form-select select2">
+                                  <option value="Designer">اختر المحطة</option>
+                                  <option value="Developer">Developer</option>
+                                  <option value="Tester">Tester</option>
+                                  <option value="Manager">Manager</option>
+                                </select>
+                              </div>
+                              <div class="mb-3 col-lg-6 col-xl-4 col-12 mb-0">
+                                <label class="form-label" for="form-repeater-1-1">  اسم الدوام<span class="start-form">*</span></label>
+                                <input type="text" id="form-repeater-1-1" class="form-control" placeholder=" اسم الدوام" />
+                              </div>
+                              <div class="mb-3 col-lg-6 col-xl-4 col-12 mb-0">
+                                <label class="form-label" for="form-repeater"> حساب الدوم<span class="start-form">*</span></label>
+                                <select id="form-repeater" class="form-select select2">
+                                  <option value="Designer"> حساب الدوم</option>
+                                  <option value="Developer">Developer</option>
+                                  <option value="Tester">Tester</option>
+                                  <option value="Manager">Manager</option>
+                                </select>
+                              </div>
+                              <div class="mb-3 col-lg-6 col-xl-4 col-12 mb-0">
+                                <label class="form-label" for="form-repeater-1">   من وقت<span class="start-form">*</span></label>
+                                <input type="time" id="form-repeater-1" class="form-control" placeholder=" اسم الدوام" />
+                              </div>
+                              <div class="mb-3 col-lg-6 col-xl-4 col-12 mb-0">
+                                <label class="form-label" for="form-repeater2">  الى وقت <span class="start-form">*</span></label>
+                                <input type="time" id="form-repeater2" class="form-control" placeholder=" اسم الدوام" />
+                              </div>
+                              <div class="mb-3 col-lg-12 col-xl-4 col-12 d-flex align-items-center mb-0">
+                                <button class="btn btn-label-danger mt-4" data-repeater-delete>
+                                  <i class="ti ti-x ti-xs me-1"></i>
+                                  <span class="align-middle">Delete</span>
+                                </button>
+                              </div>
+                            </div>
+                            <hr />
+
+                          </div>
+                          <div class="mb-3">
+                            <button class="btn btn-primary" data-repeater-create>
+                              <i class="ti ti-plus me-1"></i>
+                              <span class="align-middle">Add New</span>
+                            </button>
+                          </div>
+                      </div>
+                        <div class="col-12 col-lg-8">
+                          <button type="submit" class="btn btn-primary  waves-effect waves-light">حفظ</button>
+                          <a href="all-always.html" class="btn btn-label-secondary waves-effect mx-md-3 mx-1">مشاهدة الكل</a>
+                         </div>
+                  
+                     </form>
+                    <!--/ Add employees form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Add products Modal -->
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl">
@@ -1324,7 +1116,6 @@
     <script src="./assets/vendor/js/mega-dropdown.js"></script>
     <script src="./assets/vendor/libs/select2/select2.js"></script>
     <script src="./assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
-    <script src="./assets/vendor/libs/bs-stepper/bs-stepper.js"></script><!--24-10-2024-->
 
    
 
@@ -1346,7 +1137,6 @@
      <script src="./assets/vendor/js/chart.js"></script>
      <script src="./assets/js/forms-selects.js"></script>
      <script src="./assets/js/forms-extras.js"></script>
-     <script src="./assets/js/form-wizard-numbered.js"></script><!--24-10-2024-->
 
   </body>
 </html>
