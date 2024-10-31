@@ -407,3 +407,12 @@ color: #dbdade !important;
   flex-wrap: wrap;
   align-items: stretch;
 }
+.accordion-button {
+  background-color: rgb(var(--theme-color)) !important;
+  color: #fff !important;
+  font-size: 18px !important;
+}
+.accordion-header + .accordion-collapse .accordion-body {
+  padding-top: 0;
+  box-shadow: 0px 2px 6px #dbdade inset;
+}
